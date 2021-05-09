@@ -5,22 +5,24 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: Pages
-- type: document
-  path: src/_data/quicklinks.yaml
-  label: Quicklinks
-- type: document
-  path: src/_data/settings.yaml
-  label: Settings
-- type: document
-  path: src/_data/navigation.yaml
-  label: Navigation
+  label: Páginas
 - type: directory
   path: src/posts
   label: Posts
   create: documents
   match: "*.md"
   new_doc_ext: md
+- type: heading
+  label: Configuraciones
+- type: document
+  path: src/_data/navigation.yaml
+  label: Navigation
+- type: document
+  path: src/_data/settings.yaml
+  label: Settings
+- type: document
+  path: src/_data/quicklinks.yaml
+  label: Quicklinks
 upload_dir: src/static/img
 public_path: "/static/img"
 front_matter_path: ''
