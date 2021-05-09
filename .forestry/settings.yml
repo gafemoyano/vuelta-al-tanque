@@ -10,7 +10,8 @@ sections:
   path: src
   label: Pages
   create: all
-  match: "**/*.(md|html)"
+  match: "**/*.html"
+  new_doc_ext: ".html"
 - type: document
   path: src/nosotros/index.md
   label: About
