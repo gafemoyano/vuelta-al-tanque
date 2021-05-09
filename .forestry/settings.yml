@@ -4,13 +4,13 @@ auto_deploy: false
 admin_path: ".forestry"
 webhook_url: 
 sections:
+- type: heading
+  label: Contenido
 - type: directory
   path: src
   label: Pages
   create: all
   match: "**/*.(md|html)"
-- type: heading
-  label: Páginas
 - type: document
   path: src/nosotros/index.md
   label: About
