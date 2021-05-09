@@ -8,10 +8,10 @@ sections:
   label: Contenido
 - type: directory
   path: src
-  label: Pages
+  label: Páginas
   create: all
   match: "**/*.html"
-  exclude: _includes
+  exclude: "*_includes"
   new_doc_ext: html
 - type: document
   path: src/nosotros/index.md
