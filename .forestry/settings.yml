@@ -4,6 +4,18 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/_data/quicklinks.yaml
+  label: Quicklinks
+  match: "**/*"
+- type: document
+  path: src/_data/settings.yaml
+  label: Settings
+  match: "**/*"
+- type: document
+  path: src/_data/navigation.yaml
+  label: Navigation
+  match: "**/*"
 - type: directory
   path: src/posts
   label: Posts
