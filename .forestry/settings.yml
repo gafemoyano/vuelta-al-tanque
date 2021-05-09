@@ -4,12 +4,11 @@ auto_deploy: false
 admin_path: ".forestry"
 webhook_url: 
 sections:
+- type: heading
+  label: Páginas
 - type: document
   path: src/nosotros/index.md
   label: About
-  match: "**/*"
-- type: heading
-  label: Páginas
 - type: directory
   path: src/home
   label: Home
