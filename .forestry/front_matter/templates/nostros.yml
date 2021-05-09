@@ -1,4 +1,20 @@
 ---
 label: Nostros
 hide_body: true
-fields: []
+fields:
+- name: titulo
+  type: text
+  config:
+    required: false
+  label: Título
+  description: El título de la página
+- name: contenido
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Contenido
+  description: Área de contenido
