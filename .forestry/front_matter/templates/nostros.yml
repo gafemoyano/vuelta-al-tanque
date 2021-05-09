@@ -18,3 +18,5 @@ fields:
       format: markdown
   label: Contenido
   description: Área de contenido
+pages:
+- src/nosotros/index.md
