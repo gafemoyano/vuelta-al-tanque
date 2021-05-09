@@ -11,7 +11,7 @@ sections:
   label: Pages
   create: all
   match: "**/*.html"
-  exclude: "**/*(_includes|_data|admin)"
+  exclude: _includes
   new_doc_ext: html
 - type: document
   path: src/nosotros/index.md
