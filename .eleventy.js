@@ -17,6 +17,35 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addCollection("tagList", function (collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(function (item) {
+      if ("tags" in item.data) {
+        let tags = item.data.tags;
+
+        tags = tags.filter(function (item) {
+          switch (item) {
+            // this list should match the `filter` list in tags.njk
+            case "all":
+            case "nav":
+            case "post":
+            case "posts":
+              return false;
+          }
+
+          return true;
+        });
+
+        for (const tag of tags) {
+          tagSet.add(tag);
+        }
+      }
+    });
+
+    // returning an array in addCollection works in Eleventy 0.5.3
+    return [...tagSet];
+  });
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
@@ -29,7 +58,7 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
+    // "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",
   });
@@ -47,7 +76,7 @@ module.exports = function (eleventyConfig) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
