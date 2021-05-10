@@ -11,7 +11,7 @@ sections:
   label: Páginas
   create: all
   match: "**/*.html"
-  exclude: src/_includes/**/*.html
+  exclude: "{_includes,admin,static}"
   new_doc_ext: html
 - type: document
   path: src/nosotros/index.md
