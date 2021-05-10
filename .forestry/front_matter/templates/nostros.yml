@@ -2,27 +2,27 @@
 label: Nostros
 hide_body: true
 fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Título
-    description: El título de la página
-  - name: description
-    type: text
-    config:
-      required: false
-    label: Descripción
-    description: Descripción SEO de la página
-  - name: contenido
-    type: textarea
-    default: ""
-    config:
-      required: true
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Contenido
-    description: Área de contenido
+- name: title
+  type: text
+  config:
+    required: false
+  label: Título
+  description: El título de la página
+- name: description
+  type: text
+  config:
+    required: false
+  label: Descripción
+  description: Descripción SEO de la página
+- name: contenido
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Contenido
+  description: Área de contenido
 pages:
-  - src/nosotros/index.md
+- src/nosotros/index.md
