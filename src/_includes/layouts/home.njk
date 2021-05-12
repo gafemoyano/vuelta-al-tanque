@@ -1,0 +1,56 @@
+---
+layout: layouts/default
+title: Inicio
+path: home
+---
+
+<main>
+  <section class="relative flex flex-row items-center justify-center w-full mx-auto h-72 bg-primary">
+    <div  class="absolute top-0 left-0 ml-48">
+      <img src="/static/img/absurd/07.png" alt="bombillo en blanco y negro" class="w-auto h-64">
+    </div>
+    <div>
+      <h1 class="text-4xl tracking-wide text-center lg:text-5xl text-secondary">
+        {{encabezado}}
+      </h1>
+
+      <p class="max-w-md mt-4 text-lg font-semibold leading-6 text-center text-blue-50">
+        {{subtitulo}}
+      </p>
+    </div>
+    <div  class="absolute bottom-0 right-0 mr-12">
+      <img src="/static/img/absurd/05.png" alt="bombillo en blanco y negro" class="w-auto h-48">
+    </div>
+  </section>
+
+  <section class="container mx-auto mb-16">
+    <h2 class="mt-8 text-center">Últimos artículos</h2>
+    <div class="grid w-full grid-cols-3 gap-4 mt-8">
+      <article class="flex justify-center col-span-3 md:col-span-1">
+        <div class="flex flex-col max-w-md">
+          <div class="rounded-md">
+            <img class="w-full h-56 rounded" src="/static/img/exodo.jpg" alt="Un millenial con verduras en un campo verde">
+          </div>
+          <h3 class="mt-4">El éxodo urbano</h3>
+          <a href="#" class="font-semibold text-pink-400 hover:text-pink-500">Cosas de millenials</a>
+          <p class="mt-2 text-gray-600">
+            Tras experimentar aquel año 2020 que se nos quedará grabado en la memoria, pareciera que gentes de casi todas las generaciones estarían de acuerdo en que, por décadas, no había sufrido la humanidad una zarandeada más despiadada como...
+          </p>
+        </div>
+      </article>
+      <article class="flex justify-center col-span-3 md:col-span-1">
+        <div class="flex flex-col max-w-md">
+          <div class="rounded-md">
+            <img class="w-full h-56 rounded" src="/static/img/antilibrary.jpg" alt="Un millenial con verduras en un campo verde">
+          </div>
+          <h3 class="mt-4">La antilibrería digital</h3>
+          <a href="#" class="font-semibold text-pink-400 hover:text-pink-500">Cosas de millenials</a>
+          <p class="mt-2 text-gray-600">
+            En estos tiempos donde estamos bombardeados de información, podemos usar una antilibrería digital para pre-seleccionar temas que se alineen con nuestros objetivos de vida, recomendaciones y cosas que queremos explorar...
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>

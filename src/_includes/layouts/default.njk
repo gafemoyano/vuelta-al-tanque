@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vuelta al tanque | {{ title }}</title>
+    {% if description %}
+      <meta name="description" content="{{ description }}"/>
+    {% endif %}
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    {% if prism == true %}
+      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css"/>
+    {% endif %}
+    <script type="module">
+      import alpinejs from "https://cdn.skypack.dev/alpinejs";
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  </head>
+  <body class="flex flex-col min-h-screen overflow-x-hidden text-base antialiased text-gray-800 bg-gray-50 font-body">
+    {# navbar #}
+    {% include "../partials/navbar.njk" %}
+
+    {# content #}
+    {{ content | safe }}
+
+    {# footer #}
+    {% include "../partials/footer.html" %}
+
+    {# {% if path == "home" %}
+      <!-- Netlify Identity Widget -->
+      <!-- Needed only if you are using Netlify Identity feature -->
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %} #}
+  </body>
+</html>
