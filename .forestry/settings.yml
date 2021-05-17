@@ -32,7 +32,7 @@ sections:
     label: Autores
   - type: document
     path: src/_data/tags.yml
-    label: Tags
+    label: Etiquetas
   - type: heading
     label: Configuraciones
   - type: document
