@@ -1,4 +1,35 @@
 ---
 label: Página
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Título
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Imagen
+  description: Imagen principal
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtítulo
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Plantilla
+  description: Este es un campo opcional en caso de que la página tenga una plantilla
+    especial
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Link
+  description: El link donde va aquedar publicada la página, usualmente tiene el formato
+    `/nombre-de-la-pagina/index.tml
+  default: "/nombre-de-la-pagina/index.html"
