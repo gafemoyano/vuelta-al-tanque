@@ -2,55 +2,51 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ".forestry"
-webhook_url: 
+webhook_url:
 sections:
-- type: document
-  path: src/_data/categorias.yml
-  label: Categorías
-  match: "**/*"
-- type: document
-  path: src/_data/tags.yml
-  label: Tags
-- type: heading
-  label: Contenido
-- type: directory
-  path: src
-  label: Páginas
-  create: all
-  match: "**/*.html"
-  exclude: "{_includes,_data,admin,static}/**/*"
-  new_doc_ext: html
-- type: document
-  path: src/nosotros/index.md
-  label: About
-- type: directory
-  path: src/home
-  label: Home
-  create: documents
-  match: index.md
-- type: directory
-  path: src/posts
-  label: Posts
-  create: documents
-  match: "*.md"
-  new_doc_ext: md
-- type: document
-  path: src/_data/authors.yml
-  label: Autores
-- type: heading
-  label: Configuraciones
-- type: document
-  path: src/_data/navigation.yaml
-  label: Navigation
-- type: document
-  path: src/_data/settings.yaml
-  label: Settings
-- type: document
-  path: src/_data/quicklinks.yaml
-  label: Quicklinks
+  - type: heading
+    label: Contenido
+  - type: directory
+    path: src
+    label: Páginas
+    create: all
+    match: "**/*.html"
+    exclude: "{_includes,_data,admin,static}/**/*"
+    new_doc_ext: html
+  - type: document
+    path: src/nosotros/index.md
+    label: About
+  - type: directory
+    path: src/home
+    label: Home
+    create: documents
+    match: index.md
+  - type: directory
+    path: src/posts
+    label: Posts
+    create: documents
+    match: "*.md"
+    new_doc_ext: md
+  - type: document
+    path: src/_data/authors.yml
+    label: Autores
+  - type: document
+    path: src/_data/tags.yml
+    label: Tags
+  - type: heading
+    label: Configuraciones
+  - type: document
+    path: src/_data/navigation.yaml
+    label: Navigation
+  - type: document
+    path: src/_data/settings.yaml
+    label: Settings
+  - type: document
+    path: src/_data/quicklinks.yaml
+    label: Quicklinks
 upload_dir: src/static/img
 public_path: "/static/img"
-front_matter_path: ''
+front_matter_path: ""
 use_front_matter_path: false
 file_template: ":filename:"
 build:
