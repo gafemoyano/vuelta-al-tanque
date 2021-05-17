@@ -1,0 +1,36 @@
+<div class="grid w-full grid-cols-3 gap-4 mt-8">
+  {% for post in postslist | reverse %}
+    <article class="flex justify-center col-span-3 md:col-span-1">
+      <div class="flex flex-col max-w-md">
+        <div class="rounded-md">
+          <img class="w-full h-56 rounded" src="/static/img/exodo.jpg" alt="Un millenial con verduras en un campo verde">
+        </div>
+        <h3 class="mt-4">
+          <a href="{{ post.url | url }}" class="postlist-link">{{post.data.title}}</a>
+        </h3>
+        {% for tag in post.data.tags | filterTagList %}
+          {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+          <a href="{{ tagUrl | url }}" class="font-semibold text-pink-400 hover:text-pink-500">{{ tag }}</a>
+        {% endfor %}
+        <p class="mt-2 text-gray-600">
+          Tras experimentar aquel año 2020 que se nos quedará grabado en la memoria, pareciera que gentes de casi todas las generaciones estarían de acuerdo en que, por décadas, no había sufrido la humanidad una zarandeada más despiadada como...
+        </p>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+
+{#
+<ol reversed >
+{% for post in postslist | reverse %}
+  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    {% for tag in post.data.tags | filterTagList %}
+      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+  </li>
+{% endfor %}
+</ol> #}
