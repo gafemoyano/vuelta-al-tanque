@@ -17,3 +17,15 @@ fields:
 - type: list
   name: tags
   label: tags
+- name: autor
+  type: select
+  default: []
+  config:
+    required: true
+    options: []
+    source:
+      type: pages
+      section: autores
+      file: src/_data/authors.yml
+      path: authors
+  label: Autor
