@@ -36,3 +36,5 @@ fields:
       file: src/_data/authors.yml
       path: authors
   label: Autor
+pages:
+- src/posts/el-exido-urbano.md
