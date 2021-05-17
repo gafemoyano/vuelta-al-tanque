@@ -5,9 +5,12 @@ admin_path: ".forestry"
 webhook_url: 
 sections:
 - type: document
+  path: src/_data/categorias.yml
+  label: Categorías
+  match: "**/*"
+- type: document
   path: src/_data/tags.yml
   label: Tags
-  match: "**/*"
 - type: heading
   label: Contenido
 - type: directory
