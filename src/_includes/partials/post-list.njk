@@ -3,7 +3,7 @@
     <article class="flex justify-center col-span-3 md:col-span-1">
       <div class="flex flex-col max-w-md">
         <div class="rounded-md">
-          <img class="w-full h-56 rounded" src="{{ post.data.cover }}" alt="Un millenial con verduras en un campo verde">
+          <img class="object-cover w-full h-56 rounded" src="{{ post.data.cover }}" alt="Un millenial con verduras en un campo verde">
         </div>
         <h3 class="mt-4">
           <a href="{{ post.url | url }}" class="postlist-link">{{post.data.title}}</a>
@@ -13,24 +13,10 @@
           <a href="{{ tagUrl | url }}" class="font-semibold text-pink-400 hover:text-pink-500">{{ tag }}</a>
         {% endfor %}
         <p class="mt-2 text-gray-600">
-          {{post.description}}
+          {{post.data.description | truncate(250)}}
         </p>
       </div>
     </article>
   {% endfor %}
 </div>
 
-
-{#
-<ol reversed >
-{% for post in postslist | reverse %}
-  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-    {% endfor %}
-  </li>
-{% endfor %}
-</ol> #}
