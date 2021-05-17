@@ -8,9 +8,6 @@ fields:
 - type: textarea
   name: description
   label: description
-- type: text
-  name: author
-  label: author
 - type: datetime
   name: date
   label: date
@@ -24,7 +21,7 @@ fields:
       section: tags-252d43ac-a5ba-44e2-8bb9-f3dc80196e26
       file: src/_data/tags.yml
       path: tags
-- name: autor
+- name: author
   type: select
   default: []
   config:
