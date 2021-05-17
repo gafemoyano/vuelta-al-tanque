@@ -7,12 +7,12 @@ sections:
 - type: heading
   label: Contenido
 - type: directory
-  path: src
+  path: src/pages
   label: Páginas
   create: all
-  match: "**/*.html"
+  match: "**/*.md"
   exclude: "{_includes,_data,admin,static}/**/*"
-  new_doc_ext: html
+  new_doc_ext: md
 - type: document
   path: src/nosotros/index.md
   label: About
@@ -27,6 +27,8 @@ sections:
   create: documents
   match: "*.md"
   new_doc_ext: md
+  templates:
+  - post
 - type: document
   path: src/_data/authors.yml
   label: Autores
