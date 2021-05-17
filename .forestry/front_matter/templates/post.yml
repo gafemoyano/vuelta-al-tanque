@@ -24,7 +24,7 @@ fields:
     required: true
     options: []
     source:
-      type: pages
+      type: documents
       section: autores
       file: src/_data/authors.yml
       path: authors
