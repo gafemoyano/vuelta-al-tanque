@@ -3,7 +3,7 @@
     <article class="flex justify-center col-span-3 md:col-span-1">
       <div class="flex flex-col max-w-md">
         <div class="rounded-md">
-          <img class="w-full h-56 rounded" src="/static/img/exodo.jpg" alt="Un millenial con verduras en un campo verde">
+          <img class="w-full h-56 rounded" src="{{ post.data.cover }}" alt="Un millenial con verduras en un campo verde">
         </div>
         <h3 class="mt-4">
           <a href="{{ post.url | url }}" class="postlist-link">{{post.data.title}}</a>
