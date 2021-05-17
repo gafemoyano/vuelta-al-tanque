@@ -1,5 +1,5 @@
 ---
-titulo: ¿Qué es Vuelta al Tanque?
+title: ¿Qué es Vuelta al Tanque?
 contenido: Hay dos personas detrás de este proyecto.
 permalink: /acerca/index.html
 ---

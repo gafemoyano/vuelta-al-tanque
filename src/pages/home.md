@@ -1,4 +1,5 @@
 ---
+title: Inicio
 layout: layouts/home
 permalink: /
 encabezado: Vuelta al tanque
