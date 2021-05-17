@@ -13,14 +13,6 @@ sections:
   match: "**/*.md"
   exclude: "{_includes,_data,admin,static}/**/*"
   new_doc_ext: md
-- type: document
-  path: src/nosotros/index.md
-  label: About
-- type: directory
-  path: src/home
-  label: Home
-  create: documents
-  match: index.md
 - type: directory
   path: src/posts
   label: Posts
@@ -39,13 +31,10 @@ sections:
   label: Configuraciones
 - type: document
   path: src/_data/navigation.yaml
-  label: Navigation
+  label: Navegación
 - type: document
   path: src/_data/settings.yaml
-  label: Settings
-- type: document
-  path: src/_data/quicklinks.yaml
-  label: Quicklinks
+  label: Configuración
 upload_dir: src/static/img
 public_path: "/static/img"
 front_matter_path: ''
