@@ -36,5 +36,12 @@ fields:
       file: src/_data/authors.yml
       path: authors
   label: Autor
+- name: cover
+  type: file
+  config:
+    maxSize: 64
+  label: Imágen de cover
+  description: Imagen que va a salir en la tarjeta del artículo y en las visualizaciones
+    de Facebook, Twitter, etc.
 pages:
 - src/posts/el-exido-urbano.md
