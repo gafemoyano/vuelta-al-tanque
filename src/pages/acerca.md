@@ -3,7 +3,7 @@ title: "¿Qué es Vuelta al Tanque?"
 subtitle: Un espacio de expresión poco pretencioso.
 permalink: "/acerca/index.html"
 image: ''
-layout: ''
+layout: layouts/page
 
 ---
 Vuelta al tanque es un depósito de opiniones, pensamientos y comentarios sobre la realidad que nos rodea. Los contenidos se desarrollan con el rigor que apenas otorga la mente curiosa, sin la pretenciosa intención de persuadir. 
