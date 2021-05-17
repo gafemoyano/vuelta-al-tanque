@@ -25,7 +25,9 @@
     {% include "../partials/navbar.njk" %}
 
     {# content #}
-    {{ content | safe }}
+    <main class="flex-1">
+      {{ content | safe }}
+    </main>
 
     {# footer #}
     {% include "../partials/footer.html" %}
