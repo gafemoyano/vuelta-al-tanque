@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ".forestry"
 webhook_url: 
 sections:
+- type: document
+  path: src/_data/tags.yml
+  label: Tags
+  match: "**/*"
 - type: heading
   label: Contenido
 - type: directory
