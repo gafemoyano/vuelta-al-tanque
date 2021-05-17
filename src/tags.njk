@@ -21,8 +21,5 @@ permalink: /tags/{{ tag | slug }}/
 {% set postslist = collections[ tag ] %}
 {% include 'partials/post-list.njk'%}
 
-{% for post in postslist | reverse %}
-  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-{% endfor %}
 
 <p>Ver <a href="{{ '/tags/' | url }}">todas las categorías</a>.</p>
