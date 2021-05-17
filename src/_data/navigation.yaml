@@ -1,10 +1,8 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: "/blog"
+  - text: Cosas de millenials
+    url: "/tags/millenials"
+  - text: Cuentos
+    url: "/tags/cuentos"
+  - text: Acerca de
+    url: "/acerca/"
