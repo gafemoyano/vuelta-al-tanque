@@ -1,6 +1,6 @@
 ---
 autor: Jorge Jaramillo
-title: El éxido urbano
+title: El éxodo urbano
 description: El éxodo urbano a llevado a algunas poblaciones a migrar al campo, buscando
   nuevas comodidades que no existen en las ciudades. Sin embargo, su migración inoportuna
   ha generado dinámicas preocupantes en las comunidades que los reciben.
