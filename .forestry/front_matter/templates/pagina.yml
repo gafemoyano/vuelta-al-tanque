@@ -25,6 +25,7 @@ fields:
   label: Plantilla
   description: Este es un campo opcional en caso de que la página tenga una plantilla
     especial
+  default: layouts/page
 - name: permalink
   type: text
   config:
