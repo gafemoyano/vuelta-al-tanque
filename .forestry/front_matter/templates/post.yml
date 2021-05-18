@@ -41,5 +41,4 @@ fields:
   description: Imagen que va a salir en la tarjeta del artículo y en las visualizaciones
     de Facebook, Twitter, etc.
 pages:
-- src/posts/el-exido-urbano.md
 - src/posts/la-antilibreria-digital.md
