@@ -3,5 +3,5 @@ title: Inicio
 layout: layouts/home
 permalink: /
 encabezado: Vuelta al tanque
-subtitulo: Pasos pequeños hacia reflexiones, aleatoriamente, profundas.
+subtitulo: Un simple y honesto espacio de opinión.
 ---

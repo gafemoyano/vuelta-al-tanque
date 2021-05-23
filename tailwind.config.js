@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: [
-        "Abril Fatface",
+        '"Noto Sans JP"',
         "ui-serif",
         "Georgia",
         "Cambria",
@@ -46,8 +46,8 @@ module.exports = {
       blue: colors.blue,
       gray: colors.gray,
       pink: colors.rose,
-      primary: "#5D62FB",
-      secondary: colors.rose[300],
+      primary: colors.lightBlue[900],
+      secondary: colors.amber[200],
     },
 
     extend: {
