@@ -1,9 +1,10 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  mode: "jit",
   purge: {
     mode: "all",
-    content: ["./**/*.html"],
+    content: ["./**/*.{html,njk}"],
     options: {
       whitelist: [],
     },
@@ -11,7 +12,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: [
-        '"Noto Sans JP"',
+        '"Noto Sans"',
         "ui-serif",
         "Georgia",
         "Cambria",
@@ -54,6 +55,11 @@ module.exports = {
       colors: {},
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      flex: ["even"],
+      margin: ["even"],
+    },
+  },
   plugins: [require("@tailwindcss/typography")],
 };
