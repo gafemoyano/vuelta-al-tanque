@@ -13,21 +13,24 @@
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css"/>
     {% endif %}
-    <script type="module">
-      import alpinejs from "https://cdn.skypack.dev/alpinejs";
-    </script>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
   </head>
-  <body class="flex flex-col min-h-screen overflow-x-hidden text-base antialiased text-gray-800 bg-gray-50 font-body">
+  <body class="flex flex-col min-h-screen overflow-x-hidden text-base antialiased text-gray bg-background font-body">
+    
+    {% if path != "home" %}  
+      {% include "../partials/navbar.njk" %}
+    {% endif %}
     {# navbar #}
-    {% include "../partials/navbar.njk" %}
 
     {# content #}
-    <main class="flex-1">
+    <main class="flex-1 bg-background">
       {{ content | safe }}
     </main>
 

@@ -1,4 +1,4 @@
-<div class="w-full text-secondary bg-primary">
+<div class="w-full text-blue-900 shadow-md bg-secondary">
   <nav
     class="container flex flex-wrap items-center justify-center px-6 py-4 mx-auto lg:justify-between lg:px-0"
     x-data="{ isOpen: false }"
@@ -6,7 +6,7 @@
   >
     <!--Logo etc-->
     <div class="flex items-center">
-      <a href="/" class="text-3xl font-semibold tracking-wide text-indigo-500 font-display">
+      <a href="/" class="text-3xl font-display">
         Vuelta al tanque
       </a>
     </div>
@@ -15,7 +15,7 @@
     <button
       @click="isOpen = !isOpen"
       type="button"
-      class="block px-2 ml-auto lg:hidden text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500"
+      class="block px-2 ml-auto lg:hidden text-primary hover:text-primary focus:outline-none focus:text-primary"
       :class="{ 'transition transform-180': isOpen }"
       aria-label="Menu"
     >
