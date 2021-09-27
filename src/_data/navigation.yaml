@@ -1,8 +1,6 @@
 ---
 items:
-  - text: Cosas de millenials
-    url: "/tags/cosas-de-millenials"
-  - text: Cuenticos
-    url: "/tags/cuenticos"
-  - text: Acerca de
-    url: "/acerca/"
+- text: Cosas de millenials
+  url: "/tags/cosas-de-millenials"
+- text: Acerca de
+  url: "/acerca/"
