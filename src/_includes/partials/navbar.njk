@@ -1,4 +1,4 @@
-<div class="w-full text-blue-900 shadow-md bg-secondary">
+<div class="w-full bg-white border-b-2 border-black shadow-md">
   <nav
     class="container flex flex-wrap items-center justify-center px-6 py-4 mx-auto lg:justify-between lg:px-0"
     x-data="{ isOpen: false }"
@@ -6,7 +6,7 @@
   >
     <!--Logo etc-->
     <div class="flex items-center">
-      <a href="/" class="text-3xl font-display">
+      <a href="/" class="text-3xl text-accent hover:text-secondary font-display">
         Vuelta al tanque
       </a>
     </div>
@@ -15,7 +15,7 @@
     <button
       @click="isOpen = !isOpen"
       type="button"
-      class="block px-2 ml-auto lg:hidden text-primary hover:text-primary focus:outline-none focus:text-primary"
+      class="block px-2 ml-auto lg:hidden text-accent hover:text-accent focus:outline-none focus:text-accent"
       :class="{ 'transition transform-180': isOpen }"
       aria-label="Menu"
     >
@@ -53,11 +53,11 @@
           {% for item in navigation.items %}
             <li>
               <a
-            @click="isOpen = false"
-            class="inline-block px-4 py-2 text-blue-100 no-underline text-ml hover:text-white"
-            href="{{ item.url }}"
-            >{{ item.text }}</a
-          >
+                @click="isOpen = false"
+                class="inline-block px-4 py-2 font-semibold transition-all duration-150 ease-in text-secondary text-ml hover:text-accent"
+                href="{{ item.url }}">
+                {{ item.text }}
+              </a>
             </li>
           {% endfor %}
         </ul>

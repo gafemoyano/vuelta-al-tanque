@@ -6,22 +6,10 @@
       </h2>
       {% for tag in post.data.tags | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="font-semibold text-accent">{{ tag }}</a>
+        <a href="{{ tagUrl | url }}" class="font-semibold transition-all duration-150 ease-in text-accent hover:opacity-75">{{ tag }}</a>
       {% endfor %}
-      <p class="mt-2 text-gray-600">
+      <p class="mt-2 text-body">
         {{post.data.description | truncate(150)}}
-      </p>
-    </article>
-    <article class="flex flex-col justify-center w-full">
-      <h2 class="mt-4">
-        <a href="{{ post.url | url }}" class="postlist-link">{{post.data.title}}</a>
-      </h2>
-      {% for tag in post.data.tags | filterTagList %}
-        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="font-semibold text-accent">{{ tag }}</a>
-      {% endfor %}
-      <p class="mt-2 text-gray-600">
-        {{post.data.description | truncate(250)}}
       </p>
     </article>
   {% endfor %}

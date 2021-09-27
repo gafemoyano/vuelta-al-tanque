@@ -19,14 +19,11 @@ permalink: /tags/{{ tag | slug }}/
 <section class="container mx-auto my-16">
   <h1 class="text-3xl text-center lg:text-4xl">{{ tag }}</h1>
 
-  {% set postslist = collections[ tag ] %}
-  <div class="-mx-4">
-
-  </div>
+  {% set postslist = collections[tag] %}
+  <div class="-mx-4"></div>
   {% include 'partials/post-list.njk'%}
 
   <div class="mt-12">
-    <p>Ver <a class="font-semibold text-pink-400 underline hover:text-pink-500 focus:text-pink-500" href="{{ '/tags/' | url }}">todas las categorías</a>.</p>
+    <p>Ver <a class="font-semibold underline text-accent-400 hover:text-accent-500 focus:text-accent-500" href="{{ '/tags/' | url }}">todas las categorías</a>.</p>
   </div>
 </section>
-

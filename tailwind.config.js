@@ -41,23 +41,37 @@ module.exports = {
       center: true,
     },
     colors: {
-      white: "white",
+      white: "#fff",
+      black: "#000",
       transparent: "transparent",
       current: "currentColor",
-      blue: colors.lightBlue,
-      pink: colors.rose,
-      text: '#04313c',
-      background: '#c4eaef',
-      primary: colors.lightBlue[600],
-      secondary: '#5CE1E5',
-      // secondary: '#00c2d7',
-      muted: colors.lightBlue[200],
+      text: "#04313c",
+      background: "#fafaf9",
+      primary: colors.lightBlue[900],
+      secondary: "#04313c",
+      muted: colors.warmGray[100],
       accent: colors.pink[500],
+      highlight: colors.lightBlue[100],
       gray: colors.coolGray[800],
+      body: colors.warmGray[800],
     },
 
     extend: {
       colors: {},
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.body"),
+            a: {
+              color: theme("colors.accent"),
+              "&:hover": {
+                color: theme("colors.primary"),
+              },
+            },
+            // ...
+          },
+        },
+      }),
     },
   },
   variants: {
@@ -68,17 +82,3 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography")],
 };
-const cyan = {
-  cyan1: '#fafdfe',
-  cyan2: '#f2fcfd',
-  cyan3: '#e7f9fb',
-  cyan4: '#d8f3f6',
-  cyan5: '#c4eaef',
-  cyan6: '#aadee6',
-  cyan7: '#84cdda',
-  cyan8: '#3db9cf',
-  cyan9: '#05a2c2',
-  cyan10: '#0894b3',
-  cyan11: '#0c7792',
-  cyan12: '#04313c',
-}
