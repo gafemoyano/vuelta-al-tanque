@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: [
-        '"Lilita One"',
+        '"Cookie"',
         "ui-serif",
         "Georgia",
         "Cambria",
@@ -47,13 +47,13 @@ module.exports = {
       current: "currentColor",
       text: "#04313c",
       background: "#fafaf9",
-      primary: colors.lightBlue[900],
+      primary: colors.yellow[500],
       secondary: "#04313c",
-      muted: colors.warmGray[100],
-      accent: colors.pink[500],
-      highlight: colors.lightBlue[100],
-      gray: colors.coolGray[800],
-      body: colors.warmGray[800],
+      muted: colors.stone[100],
+      accent: colors.yellow[400],
+      highlight: colors.yellow[100],
+      gray: colors.gray[800],
+      body: colors.stone[800],
     },
 
     extend: {

@@ -2,6 +2,6 @@
 title: Inicio
 layout: layouts/home
 permalink: /
-encabezado: Vuelta al tanque
+encabezado: El parque amarillo
 subtitulo: Un simple y honesto espacio de opinión.
 ---
