@@ -32,7 +32,7 @@ fields:
     required: false
   label: Link
   description: El link donde va aquedar publicada la página, usualmente tiene el formato
-    `/nombre-de-la-pagina/index.tml
+    `/nombre-de-la-pagina/index.html
   default: "/nombre-de-la-pagina/index.html"
 pages:
 - src/pages/acerca.md
