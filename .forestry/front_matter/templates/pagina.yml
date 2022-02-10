@@ -36,3 +36,4 @@ fields:
   default: "/nombre-de-la-pagina/index.html"
 pages:
 - src/pages/acerca.md
+- src/pages/home.md
