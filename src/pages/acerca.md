@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es Vuelta al Tanque?"
+title: "¿Qué es El parque amarillo?"
 subtitle: Un espacio de expresión poco pretencioso.
 permalink: "/acerca/index.html"
 image: ''
