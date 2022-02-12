@@ -2,16 +2,19 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
-  purge: {
-    mode: "all",
-    content: ["./**/*.{html,njk}"],
-    options: {
-      whitelist: [],
-    },
-  },
+  content: ["./**/*.{html,njk}"],
   theme: {
     fontFamily: {
       display: [
+        '"Poppins"',
+        "ui-serif",
+        "Georgia",
+        "Cambria",
+        '"Times New Roman"',
+        "Times",
+        "serif",
+      ],
+      serif: [
         '"Cookie"',
         "ui-serif",
         "Georgia",
@@ -45,15 +48,15 @@ module.exports = {
       black: "#000",
       transparent: "transparent",
       current: "currentColor",
-      text: "#04313c",
+      text: colors.stone[600],
       background: "#fafaf9",
       primary: colors.yellow[500],
       secondary: "#04313c",
-      muted: colors.stone[100],
+      muted: colors.stone[500],
       accent: colors.yellow[400],
       highlight: colors.yellow[100],
       gray: colors.gray[800],
-      body: colors.stone[800],
+      body: colors.stone[600],
     },
 
     extend: {
