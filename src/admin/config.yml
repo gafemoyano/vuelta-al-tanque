@@ -21,7 +21,7 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
       - label: "Author"
         name: "author"
         widget: "relation"
@@ -31,6 +31,7 @@ collections:
         displayFields: ["name"]
         multiple: true
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Cover", name: "cover", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       # - widget: select
       #   label: "tags"
