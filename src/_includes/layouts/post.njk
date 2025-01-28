@@ -5,20 +5,18 @@ layout: layouts/default
 <div class="flex flex-col items-center px-6 mt-16">
   <div>
     <div class="max-w-xl">
-      <h1 class="text-2xl font-light lg:text-4xl">{{title}}</h1>
+      <h1 class="text-2xl font-display lg:text-4xl">{{title}}</h1>
       <p class="mx-auto text-sm font-medium leading-6 text-muted">
         <time>
           {{ date | readableDate }}
                   by
           </time>
-        {% for name in author %}
-          <a>{{ name }}</a>
-          {% endfor%}
-        </p>
-        <hr class="w-16  my-8 border-b-2 border-accent"/>
-      </div>
-      <article class="my-4 prose lg:prose-base prose-stone prose-headings:font-light prose-headings:text-body">
-        {{ content | safe }}
-      </article>
+        {{ author|join(", ")}}
+      </p>
+      <hr class="w-16  my-8 border-b-2 border-accent"/>
     </div>
+    <article class="my-4 prose lg:prose-base prose-stone prose-headings:font-light prose-headings:text-body">
+      {{ content | safe }}
+    </article>
   </div>
+</div>
