@@ -1,0 +1,108 @@
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/TestTiemposText-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/static/fonts/TestTiemposText-RegularItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/static/fonts/TestTiemposText-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: italic;
+  font-weight: 500;
+  src: url(/static/fonts/TestTiemposText-MediumItalic.otf) format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url(/static/fonts/TestTiemposText-Semibold.otf) format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: italic;
+  font-weight: 600;
+  src: url(/static/fonts/TestTiemposText-SemiboldItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/static/fonts/TestTiemposText-Bold.otf) format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Tiempos Text";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/static/fonts/TestTiemposText-BoldItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Apercu Pro";
+  src: url("/static/fonts/ApercuPro.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Apercu Pro";
+  src: url("/static/fonts/ApercuPro-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Apercu Pro";
+  src: url("/static/fonts/ApercuPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Apercu Pro";
+  src: url("/static/fonts/ApercuPro-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Apercu Pro";
+  src: url("/static/fonts/ApercuPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Apercu Pro";
+  src: url("/static/fonts/ApercuPro-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}

@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: [
-        '"Poppins"',
+        '"Apercu Pro"',
         "ui-serif",
         "Georgia",
         "Cambria",
@@ -24,7 +24,7 @@ module.exports = {
         "serif",
       ],
       body: [
-        "Inter",
+        "Tiempos Text",
         "system-ui",
         "-apple-system",
         "BlinkMacSystemFont",

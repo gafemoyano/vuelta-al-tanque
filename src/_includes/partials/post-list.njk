@@ -1,15 +1,15 @@
 <div class="flex flex-col w-full max-w-3xl gap-8 px-4 mx-auto mt-8 md:px-2">
   {% for post in postslist | reverse %}
     <article class="flex flex-col justify-center w-full">
-      <h2 class="mt-4 text-xl font-light font-display md:text-2xl">
+      <h2 class="mt-4 text-xl font-bold font-display md:text-2xl">
         <a href="{{ post.url | url }}">{{post.data.title}}</a>
       </h2>
-      {% for tag in post.data.tags | filterTagList %}
+      {# {% for tag in post.data.tags | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
         <a href="{{ tagUrl | url }}" class="text-xs font-semibold tracking-wide uppercase transition-all duration-150 ease-in text-muted hover:text-primary">{{ tag }}</a>
-      {% endfor %}
+      {% endfor %} #}
       <p class="mt-4 text-body">
-        {{post.data.description | truncate(150)}}
+        {{post.data.description | truncate(250)}}
       </p>
     </article>
   {% endfor %}

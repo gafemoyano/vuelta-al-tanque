@@ -1,3 +1,7 @@
 authors:
-  - Felipe Moyano
-  - Jorge Jaramillo
+  - name: Felipe Moyano
+    bio: "Escribo de tecnología y otras cosas. A veces viajo."
+    image: "/images/felipe.png"
+  - name: Jorge Jaramillo
+    bio: "Buscando patria. Hablo de cultura y sociedad. Latinoamérica."
+    image: "/static/img/jorge.jpg"

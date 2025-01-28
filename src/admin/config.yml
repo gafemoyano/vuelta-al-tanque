@@ -5,7 +5,7 @@ backend:
   ### enable below lines for github integration ###
   # name: github
   # repo: surjithctly/neat-starter
-media_folder: "src/static/img"
+media_folder: "/static/img"
 public_folder: "/static/img"
 publish_mode: editorial_workflow
 
@@ -22,7 +22,14 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
+        multiple: false
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
@@ -67,3 +74,13 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+  - label: "Authors"
+    name: "authors"
+    folder: "src/_data"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Bio", name: "bio", widget: "string" }
+      - {label: "Avatar", name: "avatar", widget: "image"}
