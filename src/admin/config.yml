@@ -7,7 +7,6 @@ backend:
   # repo: surjithctly/neat-starter
 media_folder: "src/static/img"
 public_folder: "/static/img"
-publish_mode: editorial_workflow
 site_url: https://elparqueamarillo.com
 
 # Please run "npx netlify-cms-proxy-server" for local backend
