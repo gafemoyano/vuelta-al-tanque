@@ -1,4 +1,8 @@
 {
+  "name": "triimix",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
   "scripts": {
     "start": "npm-run-all --parallel css eleventy browsersync",
     "serve": "eleventy --serve",
@@ -35,5 +39,8 @@
   },
   "prettier": {
     "jsxBracketSameLine": true
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
