@@ -1,4 +1,3 @@
----
 items:
-- text: Acerca de
-  url: "/acerca/"
+  - text: Acerca
+    url: /acerca/
