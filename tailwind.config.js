@@ -7,7 +7,7 @@ module.exports = {
     fontFamily: {
       display: [
         '"Apercu Pro"',
-        "ui-serif",
+        "system-ui",
         "Georgia",
         "Cambria",
         '"Times New Roman"',
