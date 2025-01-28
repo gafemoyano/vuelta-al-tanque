@@ -54,6 +54,7 @@ module.exports = {
       secondary: "#04313c",
       muted: colors.stone[500],
       accent: colors.yellow[400],
+      link: colors.yellow[600],
       highlight: colors.yellow[100],
       gray: colors.gray[800],
       body: colors.stone[600],
@@ -66,7 +67,7 @@ module.exports = {
           css: {
             color: theme("colors.body"),
             a: {
-              color: theme("colors.accent"),
+              color: theme("colors.link"),
               "&:hover": {
                 color: theme("colors.primary"),
               },
