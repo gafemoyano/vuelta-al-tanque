@@ -5,6 +5,7 @@ author:
   - Jorge Jaramillo
   - Felipe Moyano
 date: 2025-01-28T14:11:00.000Z
+cover: /static/img/quino-al-3c_akltxtek-unsplash-1-.jpg
 ---
 - Adrenalina.
 - No tener que esperar a nadie.
