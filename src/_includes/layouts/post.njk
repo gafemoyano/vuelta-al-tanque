@@ -10,13 +10,15 @@ layout: layouts/default
         <time>
           {{ date | readableDate }}
                   by
+          </time>
+        {% for name in author %}
           <a>{{ author }}</a>
-        </time>
-      </p>
-      <hr class="w-16  my-8 border-b-2 border-accent" />
+          {% endfor%}
+        </p>
+        <hr class="w-16  my-8 border-b-2 border-accent"/>
+      </div>
+      <article class="my-4 prose lg:prose-base prose-stone prose-headings:font-light prose-headings:text-body">
+        {{ content | safe }}
+      </article>
     </div>
-    <article class="my-4 prose lg:prose-base prose-stone prose-headings:font-light prose-headings:text-body">
-      {{ content | safe }}
-    </article>
   </div>
-</div>
