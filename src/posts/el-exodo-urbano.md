@@ -1,15 +1,16 @@
 ---
 autor: Jorge Jaramillo
 title: " Pensamientos pandémicos: el abandono de la ciudad "
-description: El éxodo urbano a llevado a algunas poblaciones a migrar al campo, buscando
-  nuevas comodidades que no existen en las ciudades. Sin embargo, su migración inoportuna
-  ha generado dinámicas preocupantes en las comunidades que los reciben.
-author: Jorge Jaramillo
+description: El éxodo urbano a llevado a algunas poblaciones a migrar al campo,
+  buscando nuevas comodidades que no existen en las ciudades. Sin embargo, su
+  migración inoportuna ha generado dinámicas preocupantes en las comunidades que
+  los reciben.
+author:
+  - Jorge Jaramillo
 date: 2021-05-31T00:00:00.000-05:00
 tags:
-- Cosas de millenials
-cover: "/static/img/exodo.jpg"
-
+  - Cosas de millenials
+cover: /static/img/exodo.jpg
 ---
 Luego de más de un año de pandemia, posiblemente estaríamos de acuerdo en que, por décadas, no había sufrido la humanidad un golpe más despiadado como el que nos dio el COVID-19. Mientras científicos, periodistas e historiadores se han esforzado por anticipar los efectos de la pandemia, con menos éxito del que quisieran, muchos de los cambios nos han tomado por sorpresa. No esperábamos, por ejemplo, que el aislamiento y las cuarentenas tuvieran efectos tan punzantes en nuestra salud mental, al punto que se dispararan los niveles de ansiedad, o se redujeran las horas de sueño de la mayoría. O que el fortuito origen del virus en Wuhan [desatara en algunos un desprecio pasivo-agresivo por la raza china](https://www.hrw.org/news/2020/05/12/covid-19-fueling-anti-asian-racism-and-xenophobia-worldwide), que pareció cultivado por años y que encontró entonces el pretexto perfecto para salir a la luz. O que la distribución de vacunas fuera a [profundizar el ánimo nacionalista de la mayoría de países poderosos en el mundo](https://www.portafolio.co/internacional/distribucion-de-vacunas-del-covid-19-el-nacionalismo-la-amenaza-que-surge-en-reparto-de-las-dosis-contra-coronavirus-548811), al hacer lo posible por vacunar a su población primero, como ignorando que más se retardaba el regreso a cierta normalidad si los países pobres no accedían también a las vacunas. Pero acá me concentro en un fenómeno al que la pandemia ha contribuido, y que ha sido menos previsible: el éxodo urbano.
 
