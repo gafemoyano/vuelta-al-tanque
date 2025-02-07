@@ -1,5 +1,9 @@
 ---
 title: Un mundo sin Rappi
+description: Pido comida por una app y me llega en minutos, como si fuera magia.
+  Pero la magia tiene ciclistas exhaustos, migrantes atrapados y un sistema que
+  normaliza lo que antes no existía. ¿Y si un día Rappi, Glovo y todo esto
+  simplemente desaparecieran?
 author:
   - Jorge Jaramillo
 date: 2025-01-28T00:00:00.000Z
