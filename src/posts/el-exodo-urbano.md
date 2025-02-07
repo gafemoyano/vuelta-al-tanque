@@ -1,5 +1,5 @@
 ---
-title: " Pensamientos pandémicos: el abandono de la ciudad "
+title: El abandono de la ciudad
 description: El éxodo urbano a llevado a algunas poblaciones a migrar al campo,
   buscando nuevas comodidades que no existen en las ciudades. Sin embargo, su
   migración inoportuna ha generado dinámicas preocupantes en las comunidades que
