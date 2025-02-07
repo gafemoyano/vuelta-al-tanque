@@ -1,5 +1,7 @@
 ---
 title: Páramos
+description: Boyacá es un territorio que no se deja entender. Entre sus montañas
+  y páramos, uno es extranjero en su propia tierra.
 author:
   - Jorge Jaramillo
 date: 2025-01-13T00:00:00.000Z
