@@ -16,6 +16,16 @@ export default function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addCollection("authors", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/authors/*.md");
+  });
+
+  eleventyConfig.addFilter("filterPostsByAuthor", (posts, authorName) => {
+    return posts.filter(
+      (post) => post.data.author && post.data.author.includes(authorName)
+    );
+  });
+
   eleventyConfig.addFilter("filterTagList", (tags) => {
     // should match the list in tags.njk
     return (tags || []).filter(
@@ -51,6 +61,8 @@ export default function (eleventyConfig) {
     // returning an array in addCollection works in Eleventy 0.5.3
     return [...tagSet];
   });
+
+  // eleventyConfig
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON

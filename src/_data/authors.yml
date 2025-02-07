@@ -2,6 +2,12 @@ authors:
   - name: Felipe Moyano
     bio: "Escribo de tecnología y otras cosas. A veces viajo."
     image: "/images/felipe.png"
+    slug: "felipe-moyano"
   - name: Jorge Jaramillo
     bio: "Buscando patria. Hablo de cultura y sociedad. Latinoamérica."
     image: "/static/img/jorge.jpg"
+    slug: "jorge-jaramillo"
+  - name: Juan Torregrosa
+    bio: "Pendiente..."
+    image: "/images/juan.png"
+    slug: "juan-torregrosa"
