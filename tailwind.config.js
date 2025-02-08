@@ -30,13 +30,11 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.body"),
-            a: {
-              color: theme("colors.link"),
-              "&:hover": {
-                color: theme("colors.primary"),
-              },
-            },
+            color: theme("colors.neutral.700"),
+            // a: {
+            //   "text-decoration": theme("textDecoration.underline"),
+            //   "font-weight": theme("fontWeight.medium"),
+            // },
             // ...
           },
         },
@@ -49,5 +47,5 @@ module.exports = {
       margin: ["even"],
     },
   },
-  // plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography")],
 };
