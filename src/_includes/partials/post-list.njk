@@ -6,7 +6,7 @@
           <img src="{{post.data.cover}}" alt="" class="absolute w-full h-full object-cover">
         </a>
       </div>
-      <h2 class="text-lg font-medium font-headline md:text-2xl text-neutral-800 cursor-pointer">
+      <h2 class="text-lg font-medium font-headline leading-none md:text-2xl text-neutral-800 cursor-pointer">
         <a class="inline-flex w-full" href="{{ post.url | url }}">{{post.data.title}}</a>
       </h2>
       {# {% for tag in post.data.tags | filterTagList %}

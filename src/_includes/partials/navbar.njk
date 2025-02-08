@@ -3,10 +3,20 @@
     class="flex flex-wrap items-center justify-center container py-6 mx-auto relative border-b border-neutral-200"
     x-data="{ isOpen: false }"
   >
+    <div class="flex flex-row-reverse items-end h-6">
+      <a class="font-sans font-medium uppercase leading-none text-sm text-neutral-800" href="/newsletter">
+          Newsletter
+      </a>
+    </div>
     <!--Logo etc-->
-    <div class="flex items-center">
+    <div class="flex items-center mx-16">
       <a href="/" class="font-headline font-bold text-2xl leading-none text-body hover:text-secondary">
         Parque <span class="text-accent">Amarillo</span>
+      </a>
+    </div>
+    <div class="flex flex-row-reverse items-end h-6">
+      <a class="font-sans font-medium uppercase leading-none text-sm text-neutral-800" href="/newsletter">
+          Suscribirse
       </a>
     </div>
 
@@ -45,7 +55,7 @@
     >
       {% if navigation.items %}
 
-        <ul
+        {# <ul
         class="items-center justify-end flex-1 pt-6 space-x-2 lg:pt-0 list-reset lg:flex"
       >
           {% for item in navigation.items %}
@@ -58,7 +68,7 @@
               </a>
             </li>
           {% endfor %}
-        </ul>
+        </ul> #}
 
       {% endif %}
     </div>
