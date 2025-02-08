@@ -6,13 +6,11 @@ pagination:
   alias: author
 permalink: "autores/{{ author.data.slug }}/index.html"
 ---
+<div class="my-16 container">
 
-<h1>Artículos by {{ author.data.name }}</h1>
-<ul>
-
-  {% for post in collections.post | filterPostsByAuthor(author.data.name) %}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+  <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">Artículos by {{ author.data.name }}</h1>
+</div>
+<section class="container my-16">
+  {% set postslist = collections.post | filterPostsByAuthor(author.data.name) %}
+  {% include 'partials/post-list.njk'%}
+</section>

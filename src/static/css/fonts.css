@@ -112,7 +112,7 @@
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: 100 900;
-  src: url("/static/fonts/NotoSerif-VariableFont.woff2") format("truetype");
+  src: url("/static/fonts/NotoSerif-VariableFont.ttf") format("truetype");
 }
 
 @font-face {
@@ -120,8 +120,7 @@
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: 100 900;
-  src: url("/static/fonts/NotoSerif-Italic-VariableFont.woff2")
-    format("truetype");
+  src: url("/static/fonts/NotoSerif-Italic-VariableFont.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;

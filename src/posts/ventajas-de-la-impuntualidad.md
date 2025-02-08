@@ -1,6 +1,6 @@
 ---
 title: Ventajas de la impuntualidad
-description: Ventajas de la impuntualidad
+description: Minuciosamente probadas
 author:
   - Jorge Jaramillo
   - Felipe Moyano
