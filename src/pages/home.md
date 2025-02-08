@@ -1,8 +1,8 @@
 ---
-title: Inicio
+title: Entrada
 layout: layouts/home
 permalink: /
-encabezado: El parque amarillo
+encabezado: Parque amarillo
 subtitulo: Un simple y honesto espacio de <span class="text-primary">opinión</span>.
 image: /static/img/logo.jpg
 ---

@@ -106,3 +106,75 @@
   font-weight: 700;
   font-style: italic;
 }
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/static/fonts/NotoSerif-VariableFont.woff2") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("/static/fonts/NotoSerif-Italic-VariableFont.woff2")
+    format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Literata";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/static/fonts/Literata-VariableFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Literata";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("/static/fonts/Literata-Italic-VariableFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Zen Old Mincho";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/static/fonts/ZenOldMincho-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Zen Old Mincho";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/static/fonts/ZenOldMincho-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Zen Old Mincho";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/static/fonts/ZenOldMincho-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Zen Old Mincho";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/static/fonts/ZenOldMincho-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Zen Old Mincho";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/static/fonts/ZenOldMincho-SemiBold.ttf") format("truetype");
+}

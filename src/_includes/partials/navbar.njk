@@ -1,12 +1,12 @@
 <div class="w-full bg-white">
   <nav
-    class="flex flex-wrap items-center justify-center w-full max-w-3xl px-4 py-4 mx-auto lg:justify-between sm:px-2"
+    class="flex flex-wrap items-center justify-center container py-6 mx-auto relative border-b border-neutral-200"
     x-data="{ isOpen: false }"
   >
     <!--Logo etc-->
     <div class="flex items-center">
-      <a href="/" class="font-serif text-2xl leading-none text-body hover:text-secondary">
-        El parque <span class="text-accent">amarillo</span>
+      <a href="/" class="font-headline font-bold text-2xl leading-none text-body hover:text-secondary">
+        Parque <span class="text-accent">amarillo</span>
       </a>
     </div>
 
@@ -14,7 +14,7 @@
     <button
       @click="isOpen = !isOpen"
       type="button"
-      class="block px-2 ml-auto lg:hidden text-body hover:text-accent focus:outline-none focus:text-accent"
+      class="block px-2 ml-auto lg:hidden text-body hover:text-accent focus:outline-hidden focus:text-accent absolute right-2"
       :class="{ 'transition transform-180': isOpen }"
       aria-label="Menu"
     >
@@ -39,7 +39,7 @@
 
     <!--Menu-->
     <div
-      class="flex-grow w-full text-center lg:flex lg:items-center lg:w-auto"
+      class="absolute right-2 grow w-full text-center lg:flex lg:items-center lg:w-auto"
       :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
       x-show.transition="true"
     >

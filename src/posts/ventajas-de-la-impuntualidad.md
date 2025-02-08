@@ -4,7 +4,7 @@ description: Ventajas de la impuntualidad
 author:
   - Jorge Jaramillo
   - Felipe Moyano
-date: 2025-01-28T14:11:00.000Z
+date: 2022-12-03T05:00:00.000Z
 cover: /static/img/quino-al-3c_akltxtek-unsplash-1-.jpg
 cover_alt: 'Photo by <a class="underline text-primary text-xs" href="https://unsplash.com/@quinoal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Quino Al</a> on <a href="https://unsplash.com/photos/ocean-wave-beside-seashore-during-daytime-3c_akLTXTek?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 ---

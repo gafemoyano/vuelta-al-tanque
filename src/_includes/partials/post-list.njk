@@ -1,15 +1,20 @@
-<div class="flex flex-col w-full max-w-3xl gap-8 px-4 mx-auto mt-8 md:px-2">
+<div class="grid grid-cols-1 lg:gap-12 gap-6 md:gap-8 md:grid-cols-3">
   {% for post in postslist | reverse %}
-    <article class="flex flex-col justify-center w-full">
-      <h2 class="mt-4 text-xl font-bold font-display md:text-2xl">
+    <article class="w-full space-y-2">
+      <div class="relative pb-1/2 aspect-video">
+        <a href="{{post.url | url}}">
+          <img src="{{post.data.cover}}" alt="" class="absolute w-full h-full object-cover">
+        </a>
+      </div>
+      <h2 class=" text-lg font-medium font-headline md:text-2xl text-neutral-800">
         <a href="{{ post.url | url }}">{{post.data.title}}</a>
       </h2>
       {# {% for tag in post.data.tags | filterTagList %}
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
         <a href="{{ tagUrl | url }}" class="text-xs font-semibold tracking-wide uppercase transition-all duration-150 ease-in text-muted hover:text-primary">{{ tag }}</a>
       {% endfor %} #}
-      <p class="mt-4 text-body">
-        {{post.data.description | truncate(250)}}
+      <p class=" font-body text-base text-neutral-700">
+        {{post.data.description | truncate(120)}}
       </p>
     </article>
   {% endfor %}

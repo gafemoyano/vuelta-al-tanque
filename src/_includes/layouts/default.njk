@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>El parque amarillo | {{ title }}</title>
+    <title>{{ title }} | Parque amarillo</title>
     {% if description %}
       <meta name="description" content="{{ description }}"/>
     {% endif %}
@@ -17,12 +17,8 @@
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body class="flex flex-col min-h-screen overflow-x-hidden text-base antialiased text-body bg-white font-body">
+  <body class="flex flex-col min-h-screen overflow-x-hidden text-base antialiased text-body bg-white font-sans">
 
     {% include "../partials/navbar.njk" %}
 
