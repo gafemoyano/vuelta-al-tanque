@@ -1,0 +1,32 @@
+---
+title: Universo de lo no posible (título no definitivo)
+description: Hostia puta (descripción no definitiva)
+author:
+  - Jorge Jaramillo
+date: 2025-02-08T12:45:00.000Z
+---
+El asunto de las posibilidades. Aquello de tener opciones. Como cuando uno se enfrenta a la carta de un restaurante, especialmente aquellos que se han ocupado de crear muchas, demasiadas opciones. Esas cartas que son nutridas como revistas, con veinte posibles entrantes, treinta y cinco platos principales, diez más vegetarianos, dos o cero veganos. Siete postres. Cinco o seis bebidas. Opción de bajativo. Puede ser Brandy o Limoncello.
+
+
+Para algunos, la abundancia de posibilidades se suele traducir en bloqueo. “Parálisis por análisis”, se le dice, de manera sonora. Irónicamente, contar con muchas opciones de acción (puedo hacer esto, o aquello, o aquello otro) resulta en que nos pueda costar más actuar hacia nuestro objetivo marco —elegir un plato, una película en Netflix, o el paso antes: un servicio de *streaming* entre los no pocos disponibles—. Ante menos posibilidades, en cambio, menos fricción mental entre la intención de actuar y el acto. Factiblemente más eficiencia.
+
+
+Otra expresión común es el “universo de posibilidades”. “¡Tengo un universo de posibilidades!”. En su uso común, puede que se trate de una exageración, pues literalmente alude a posibilidades infinitas, y eso no se me ocurre que suceda demasiado, en esta humanidad finita. Aunque supongo que virtualmente hay ilusión de infinidad en ciertas cuestiones cotidianas. Combinaciones infinitas de prendas de ropa, mezclas de alimentos y recetas interminables, infinidad de palabras inventadas como “textear” o “wasap” o “cochobiz” (lo que, supongo, seguirá legitimando la existencia de la RAE). Y bueno, tenemos las redes sociales y su aparentemente perpetua generación de contenidos.
+
+
+Las redes sociales son un universo de posibilidades, se podría argumentar. Un universo, figurativamente, pues son más de [5 mil millones de usuarios](https://www.smartinsights.com/social-media-marketing/social-media-strategy/new-global-social-media-research/) (el equivalente al 64% de la población mundial) creados en redes sociales, que producen e interactúan cotidianamente con los contenidos. Que publican fotos y videos, historias y *reels*. Que comentan, chatean, se envían memes, se saludan o celebran o bromean por intermedio de dibujitos llamados emoticones, a un ritmo de más de mil millones de publicaciones diarias en redes sociales a nivel global, según lo dice [esta fuente cualquiera](https://neilpatel.com/blog/wasting-time-social-media/) no verificada y seguramente infundada pero no importa porque todos sabemos que esa cifra es incomprensiblemente astronómica. O sea que estamos hablando virtualmente de una infinidad de contenidos. Cuando interactuamos con las redes, obtenemos entonces la ilusión de que las posibilidades son infinitas.
+
+
+El asunto con las redes es que esos contenidos infinitos, en buena parte, son la exposición de la vida privada de las personas. Pequeñas cápsulas de la vida de cada personita, o cada parejita, en foto o video, que ella misma empaqueta, adorna y filtra para que sus cinco o doscientos o tres mil o un millón de seguidores consuman y disfruten. No digo nada nuevo, nada que no sepamos, pero nunca sobra insistir porque parece que lo olvidáramos: estamos colectiva y constantemente —a ritmo de miles de millones de veces al día— escrutando la vida que los demás nos presentan, esa que ellos y ellas quieren que pensemos que es su vida, esa que ellas y ellos quieren pensar que es su vida. De modo que las posibilidades que consideramos infinitas en las redes sociales, son las experiencias y anécdotas digitales que representan la vida de otras personas.
+
+
+Mi relación con las redes sociales es problemática. Hace dos o tres años decidí romper con ellas, sin darle muchas vueltas, solo impulsado por la sospecha de que en ese momento, y durante mucho tiempo, estaban machacando mi cabeza. Ahora lo analizo con perspectiva. Siempre he sido de aquellos que padecen la citada parálisis por análisis, y en este caso, me ahogaba la exposición a tantas posibilidades. A tantas vidas y amores y *lifestyles* encapsulados en plano-secuencias caseros, filtrados en estilo *vintage*, o en *clarendon*, con música bacana y moderna —escogida para decir sin decir que se tiene buen gusto—, con *feedback* positivo de algunos de los 5 mil millones de usuarios que habitan ese cibermundo. Me abrumaba sentir que todo eso fuera posible, pero que yo no lo tenía, no lo conseguía.
+
+
+Que yo a diferencia de tantos de esos usuarios, no conseguía gozar la vida de esa misma manera, o asistir a tantos eventos, o pertenecer a tantos grupos de amigos tan chéveres todos. No conseguía vestirme tan bien, estar tan en forma, tener un perro y un gato, tener a la mejor mamá del mundo el día de la madre, cocinar súper bien, estar en la playa, hacerme un masaje, hacerme un tatuaje con un significado tan especial, ser demasiado inteligente (en LinkedIn), entender perfectamente la política (en Twitter), casarme, tener una fiesta de matrimonio exactamente igual a las demás pero con un toque muy mío, hacer una coreografía de calidad media-baja con mi esposa al son de Yatra o Michael Bublé o Vicente García, terminar una 10K (promocionando marcas de gratis), (de repente) ser ciclista de ruta y jugador de pádel, y verme tan guapo en todos esos escenarios.
+
+
+De manera que las redes sociales son ese maravilloso universo de posibilidades no posibles. No solo no posibles para la audiencia que irreflexivamente las recorre diariamente, sino quizás tampoco para esos mismos usuarios que producen y emperifollan sus propios contenidos. Al final, no somos exactamente lo que publicamos, aunque nos gustaría serlo. Lo que mostramos es una versión cuidadosamente seleccionada y confeccionada, una versión digital con buena luz y dirección de fotografía.
+
+
+Con todo y todo, estamos ante el mercado de lo no posible, de la aspiración. Un lugar en donde la inmensa mayoría de contenidos que observamos no son reales, pero que gravemente se enseñan como si lo fueran. Al final yo volví a las redes, con una mirada un poco más cauta, pero aún presa de cuando en cuando, de ese algoritmo todopoderoso y de la trampa del universo de lo no posible.
