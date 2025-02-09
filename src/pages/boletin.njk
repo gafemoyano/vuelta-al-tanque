@@ -1,0 +1,19 @@
+---
+title: "Boletines"
+subtitle: "Nuestro índice"
+permalink: /boletin/
+layout: layouts/default
+---
+
+<div class="container mx-auto py-24">
+  {% for newsletter in collections.boletin %}
+    <a href="{{newsletter.url}}" class="w-full max-w-4xl mx-auto flex flex-row items-center px-6 py-16 gap-8 border-b-2">
+      <h2 class="text-3xl text-center lg:text-4xl">
+        {{ newsletter.data.title }}
+      </h2>
+      <p>
+        {{ newsletter.date | readableDate }}
+      </p>
+    </a>
+  {% endfor %}
+</div>
