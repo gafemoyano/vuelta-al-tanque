@@ -9,17 +9,16 @@
     "serve": "eleventy --serve",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
-    "css": "postcss src/static/css/tailwind.css --o _site/static/css/style.css --watch",
+    "css": "npx @tailwindcss/cli -i ./src/static/css/tailwind.css --o ./_site/static/css/style.css --watch",
     "build": "run-s build:*",
     "build:11ty": "cross-env NODE_ENV=production eleventy",
-    "build:css": "cross-env NODE_ENV=production postcss src/static/css/tailwind.css --o _site/static/css/style.css",
+    "build:css": "cross-env NODE_ENV=production tailwindcss src/static/css/tailwind.css --o _site/static/css/style.css",
     "browsersync": "browser-sync start --server '_site' --files '_site' --port 8080 --no-notify --no-open",
     "clean": "npx rimraf _site"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "@tailwindcss/postcss": "^4.0.0",
     "@tailwindcss/typography": "^0.5.1",
     "alpinejs": "^2.6.0",
     "browser-sync": "^2.26.14",
@@ -29,15 +28,14 @@
     "js-yaml": "^3.14.0",
     "luxon": "^1.25.0",
     "npm-run-all2": "^7.0.2",
-    "postcss-cli": "^11.0.0",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "prismjs": "^1.21.0",
     "rimraf": "^6.0.1",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.0.5"
   },
   "dependencies": {
-    "postcss": "^8.5.1"
+    "@tailwindcss/cli": "^4.0.5"
   },
   "prettier": {
     "jsxBracketSameLine": true
