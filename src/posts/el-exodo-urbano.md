@@ -1,9 +1,7 @@
 ---
 title: El abandono de la ciudad
-description: El éxodo urbano a llevado a algunas poblaciones a migrar al campo,
-  buscando nuevas comodidades que no existen en las ciudades. Sin embargo, su
-  migración inoportuna ha generado dinámicas preocupantes en las comunidades que
-  los reciben.
+description: El éxodo urbano ha llevado a ansiosos urbanitas a migrar al campo,
+  buscando lo que no existe.
 author:
   - Jorge Jaramillo
 date: 2021-07-27T00:00:00.000Z
