@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ title }} | Parque amarillo</title>
+    {% if description %}
+      <meta name="description" content="{{ description }}"/>
+    {% endif %}
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/fonts.css"/>
+    {% if prism == true %}
+      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css"/>
+    {% endif %}
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  </head>
+  <body class="flex flex-col min-h-screen overflow-x-hidden text-base antialiased text-body bg-white font-sans">
+
+    {# navbar #}
+
+    <div class="w-full bg-white">
+      <nav
+    class="flex flex-wrap items-center justify-center container py-6 mx-auto relative border-b border-neutral-200"
+    x-data="{ isOpen: false }"
+  >
+        <div class="flex items-center mx-16">
+          <p class="font-headline font-bold text-2xl leading-none text-body hover:text-secondary">
+        Parque <span class="text-accent">Amarillo</span>
+          </p>
+        </div>
+        <!--Toggle button (hidden on large screens)-->
+      </nav>
+    </div>
+    {# content #}
+    <main class="flex-1 bg-background pb-12">
+      {{ content | safe }}
+    </main>
+
+    {# footer #}
+    <div id="subscribe" class="py-12 container mx-auto flex justify-center items-center w-full max-w-3xl">
+      {% include "../partials/convertkit.html" %}
+    </div>
+
+  </body>
+</html>
