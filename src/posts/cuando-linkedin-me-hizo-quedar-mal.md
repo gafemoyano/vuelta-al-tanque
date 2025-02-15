@@ -1,6 +1,7 @@
 ---
 title: Cuando LinkedIn me hizo quedar mal
-description: El problema con LinkedIn es que no tiene espacio para el humor.
+description: "Tejí pensamientos oscuros: estamos frente a un complot del
+  capitalismo y nos dominan bajo el yugo de la infelicidad."
 author:
   - Juan Torregrosa
 date: 2025-02-12T12:34:00.000Z
