@@ -12,7 +12,7 @@ export default function (eleventyConfig) {
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+      "dd LLL yyyy",
     );
   });
 
@@ -22,14 +22,24 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("filterPostsByAuthor", (posts, authorName) => {
     return posts.filter(
-      (post) => post.data.author && post.data.author.includes(authorName)
+      (post) => post.data.author && post.data.author.includes(authorName),
     );
+  });
+
+  eleventyConfig.addCollection("featuredPosts", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/posts/*.md")
+      .filter((item) => item.data.featured);
+  });
+
+  eleventyConfig.addFilter("filterFeatured", (posts) => {
+    return posts.filter((post) => !post.data.featured);
   });
 
   eleventyConfig.addFilter("filterTagList", (tags) => {
     // should match the list in tags.njk
     return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1,
     );
   });
 
@@ -67,7 +77,7 @@ export default function (eleventyConfig) {
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) =>
-    yaml.safeLoad(contents)
+    yaml.safeLoad(contents),
   );
 
   // Copy Static Files to /_Site

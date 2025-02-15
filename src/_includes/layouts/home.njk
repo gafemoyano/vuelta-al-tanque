@@ -2,8 +2,24 @@
 layout: layouts/default
 path: home
 ---
+{% set featuredPost = collections.featuredPosts | first %}
 
-<section class="container my-16">
-  {% set postslist = collections.post %}
+<section class="mt-16 flex flex-col md:flex-row-reverse w-full gap-8  place-content-center container">
+  <div class="w-full mx-auto">
+    <img class="object-cover object-center mx-auto aspect-[5/6] max-h-[650px]" src="{{ featuredPost.data.cover }}" alt="Cigueña volando en un futuro distópico">
+  </div>
+  <div class="w-full flex items-center justify-center">
+    <div class="max-w-md mx-auto">
+      <h1 class="text-center text-3xl md:text-5xl font-bold text-neutral-900 font-headline">
+        <a href="{{featuredPost.url}}">{{ featuredPost.data.title }}</a>
+      </h1>
+      <p class="mt-2 text-neutral-700 font-body text-center text-xl">
+        Por  <a href="/autores/{{ featuredPost.data.author | slug }}">Jorge Jaramillo</a>
+      </p>
+    </div>
+  </div>
+</section>
+<section class="container my-24">
+  {% set postslist = collections.post | filterFeatured %}
   {% include 'partials/post-list.njk'%}
 </section>
