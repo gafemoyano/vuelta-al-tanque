@@ -1,6 +1,6 @@
 ---
 title: Cuando LinkedIn me hizo quedar mal
-description: “El problema con LinkedIn es que no tiene espacio para el humor”
+description: El problema con LinkedIn es que no tiene espacio para el humor.
 author:
   - Juan Torregrosa
 date: 2025-02-12T12:34:00.000Z
