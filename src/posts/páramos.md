@@ -5,7 +5,7 @@ description: Boyacá es un territorio que no se deja entender. Entre sus montañ
 author:
   - Jorge Jaramillo
 date: 2025-01-13T00:00:00.000Z
-cover: /static/img/1_arq1nlipigxgwrc8flw1bq.webp
+cover: /static/img/dall·e-2025-02-15-11.53.43-an-abstract-mystical-image-representing-a-colombian-man-exploring-the-páramos-a-vast-and-complex-highland-landscape.-the-scene-is-filled-with-mist-.webp
 ---
 El año comienza con una visita a los campos de Boyacá, Colombia. Un territorio vasto que se desliza desde los picos nevados de la cordillera oriental de los Andes, hasta las riberas tropicales del río Magdalena en el centro del país. Un territorio que, por tal topografía, atestigua una vez más la culminación de aquella cadena montañosa que se trepa desde la Patagonia y que une a toda la América del Sur, para su encuentro con el trópico.
 
