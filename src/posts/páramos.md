@@ -2,6 +2,7 @@
 title: Páramos
 description: Entre las montañas y páramos de la cordillera de los Andes, uno es
   extranjero en su propia tierra.
+featured: true
 author:
   - Jorge Jaramillo
 date: 2025-01-13T00:00:00.000Z
