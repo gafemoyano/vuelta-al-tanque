@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{ title }} | Parque amarillo</title>
+    <title>{{ title }} | Parque Amarillo</title>
     {% if description %}
       <meta name="description" content="{{ description }}"/>
     {% endif %}
-    {% block head %}{% endblock %}
+    {% block head %}
+      {{ head }}
+    {% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/fonts.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +28,9 @@
 
     {# content #}
     <main class="flex-1 bg-background pb-12">
-      {{ content | safe }}
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
     </main>
 
     {# footer #}

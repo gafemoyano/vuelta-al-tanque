@@ -25,6 +25,9 @@ export default function (eleventyConfig) {
       (post) => post.data.author && post.data.author.includes(authorName),
     );
   });
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
 
   eleventyConfig.addCollection("featuredPosts", function (collectionApi) {
     return collectionApi
