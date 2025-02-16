@@ -12,6 +12,6 @@ cover_alt: 'Photo by <a class="underline text-primary text-xs" href="https://uns
 - Adrenalina.
 - No tener que esperar a nadie.
 - Llegar alerta / llegar preparado.
-- > Cuando uno es impuntual, cada minuto es un universo de posibilidades.
+  > Cuando uno es impuntual, cada minuto es un universo de posibilidades.
 - No tener afán en lo que uno esté haciendo antes.
 - Aprender a soltar.

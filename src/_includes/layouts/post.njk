@@ -52,7 +52,7 @@
       {% endfor %}
       <p class="text-neutral-500 font-sans text-sm mt-2" datetime="{{ date }}">{{ date | readableDate }}</p>
       <hr class="w-16  my-8 border-b-2 border-accent"/>
-      <article class="font-body my-16 prose-base lg:prose-lg  prose-a:font-semibold prose-a:underline">
+      <article class="font-body my-16 prose-base lg:prose-lg prose prose-ul:list-disc prose-ul:pl-5 prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-a:font-semibold prose-a:underline">
         {{ content | safe }}
       </article>
       <hr class="w-16  my-8 border-b-2 border-accent"/>
