@@ -1,8 +1,81 @@
 import yaml from "js-yaml";
 import { DateTime } from "luxon";
 import htmlmin from "html-minifier";
+import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
+async function metaImage(src) {
+  console.log("metaImage called with src:", src);
+  if (!src) {
+    console.warn("No source provided to metaImage shortcode");
+    return null;
+  }
+
+  let metadata = await Image(src, {
+    widths: [1200],
+    formats: ["jpeg"],
+
+    outputDir: "./_site/img/",
+    urlPath: "/img/",
+  });
+
+  const attrs = {
+    url: metadata.jpeg[0].url,
+    width: metadata.jpeg[0].width,
+    height: metadata.jpeg[0].height,
+    sourceType: metadata.jpeg[0].sourceType,
+  };
+  console.log(attrs);
+  return attrs;
+}
 export default function (eleventyConfig) {
+  eleventyConfig.addShortcode("image", async function (src, alt) {
+    let metadata = await Image(src, {
+      transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
+    });
+
+    // You bet we throw an error on a missing alt (alt="" works okay)
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
+  eleventyConfig.addAsyncShortcode(
+    "ogImage",
+    async function (src, alt, siteUrl) {
+      if (!src) {
+        console.warn("No source provided to ogImage shortcode");
+        return "";
+      }
+
+      let metadata = await Image(src, {
+        widths: [1200],
+        formats: ["jpeg"],
+        outputDir: "./_site/img/",
+        urlPath: "/img/",
+      });
+
+      if (!metadata.jpeg || metadata.jpeg.length === 0) {
+        console.warn("No JPEG image generated");
+        return "";
+      }
+
+      const imageData = metadata.jpeg[0];
+
+      return `
+      <meta property="og:image" content="${siteUrl}${imageData.url}">
+      <meta property="og:image:width" content="${imageData.width}">
+      <meta property="og:image:height" content="${imageData.height}">
+      <meta property="og:image:type" content="${imageData.sourceType}">
+      <meta property="og:image:alt" content="${alt}">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="${siteUrl}${imageData.url}">
+      <meta name="twitter:image:alt" content="${alt}">
+    `;
+    },
+  );
+
+  // eleventyConfig.addNunjucksGlobal("metaImage", metaImage);
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 

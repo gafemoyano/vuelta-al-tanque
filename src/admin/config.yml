@@ -8,7 +8,10 @@ backend:
 media_folder: "src/static/img"
 public_folder: "/static/img"
 site_url: https://elparqueamarillo.com
-
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
 publish_mode: editorial_workflow
@@ -22,6 +25,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Destacado", name: "featured", widget: "boolean",  }
       - label: "Author"
         name: "author"
         widget: "relation"
@@ -77,8 +81,10 @@ collections:
         file: "src/_data/settings.yaml"
         fields:
           - { label: Name, name: name, widget: string }
+          - { label: Description, name: description, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+          - { label: logo, name: logo, widget: image }
   - label: "Authors"
     name: "authors"
     folder: "src/authors"
