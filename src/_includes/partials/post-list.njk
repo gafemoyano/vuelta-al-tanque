@@ -19,7 +19,7 @@
       <ul class="flex gap-1 items-center">
         {% for author in post.data.author %}
           <li>
-            <a class="text-neutral-500 uppercase font-sans text-xs" href="/autores/{{author | slug}}">
+            <a class="text-neutral-500 font-sans text-sm" href="/autores/{{author | slug}}">
               {{author}}
             </a>
             {% if not loop.last %}
