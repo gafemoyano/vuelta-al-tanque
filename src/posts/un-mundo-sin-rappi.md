@@ -7,7 +7,7 @@ description: Pido comida por una app y me llega en minutos, como si fuera magia.
 author:
   - Jorge Jaramillo
 date: 2025-01-28T00:00:00.000Z
-cover: /static/img/1_crl8lehin3tp6kvm9q4yua.webp
+cover: /static/img/1_crl8lehin3tp6kvm9q4yua.jpg
 featured: true
 ---
 
