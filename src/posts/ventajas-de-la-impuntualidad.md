@@ -10,7 +10,7 @@ cover_alt: Photo by <a class="underline text-primary text-xs"
   href="https://unsplash.com/@quinoal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Quino
   Al</a> on <a
   href="https://unsplash.com/photos/ocean-wave-beside-seashore-during-daytime-3c_akLTXTek?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-featured: true
+featured: false
 ---
 
 - Adrenalina.
