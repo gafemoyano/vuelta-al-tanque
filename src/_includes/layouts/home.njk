@@ -8,8 +8,7 @@ path: home
   <meta name="keywords" content="{{ keywords }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="{{ image }}">
-  <meta property="og:url" content="{{ url }}">
+  <meta property="og:image" content="{{settings.url}}{{ settings.logo }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
@@ -20,7 +19,7 @@ path: home
 
 <section class="mt-16 flex flex-col md:flex-row-reverse w-full gap-8  place-content-center container">
   <div class="w-full mx-auto">
-    <img class="object-cover object-center mx-auto aspect-[5/6] max-h-[650px]" src="{{ featuredPost.data.cover }}" alt="Cigueña volando en un futuro distópico">
+    <img class="w-fit object-cover object-center mx-auto aspect-[5/6] max-h-[650px]" src="{{ featuredPost.data.cover }}" alt="Cigueña volando en un futuro distópico">
   </div>
   <div class="w-full flex items-center justify-center">
     <div class="max-w-md mx-auto">
