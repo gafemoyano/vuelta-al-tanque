@@ -25,7 +25,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
-      - { label: "Destacado", name: "featured", widget: "boolean",  }
+      - { label: "Destacado", name: "featured", widget: "boolean", default: false }
       - label: "Author"
         name: "author"
         widget: "relation"
