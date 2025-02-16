@@ -1,8 +1,8 @@
 ---
 title: Un mundo sin Rappi
 description: A veces me pregunto cómo sería un mundo privado de las maravillas
-  de la gig economy y la genialidad de nuestras startups favoritas. Me tildarán
-  de aguafiestas, anti-tecnológico e infeliz, pero sería un mundo mejor
+  de la gig economy y sus revolucionarias startups. Me tildarán de aguafiestas,
+  anti-tecnológico e infeliz, pero quizás sería un mundo mejor
 author:
   - Jorge Jaramillo
 date: 2025-01-28T00:00:00.000Z
