@@ -13,16 +13,26 @@ layout: layouts/default
   {% endif %}
   <div class="w-full mx-auto max-w-[65ch] mt-16">
     <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">{{title}}</h1>
-    <p class="mx-auto text-sm font-medium leading-6 text-muted font-sans mt-2 text-neutral-700">
-      <time>
-        {{ date | readableDate }}
-                  by
-          </time>
-      {{ author|join(", ")}}
-    </p>
+    {% for auth in author %}
+      <ul class="list-none mt-8">
+        <li>
+          {% if loop.first %}
+            <span class="text-neutral-700 font-medium font-sans">Por</span>
+          {% endif %}
+          <a class="font-medium text-neutral-700 font-sans  hover:underline hover:text-neutral-600" href="/autores/{{auth | slug}}">
+            {{auth}}
+          </a>
+          {% if not loop.last %}
+            <span class="text-neutral-600">•</span>
+          {% endif %}
+        </li>
+      </ul>
+    {% endfor %}
+    <p class="text-neutral-500 font-sans text-sm mt-2" datetime="{{ date }}">{{ date | readableDate }}</p>
     <hr class="w-16  my-8 border-b-2 border-accent"/>
     <article class="font-body my-16 prose-base lg:prose-lg  prose-a:font-semibold prose-a:underline">
       {{ content | safe }}
     </article>
+    <hr class="w-16  my-8 border-b-2 border-accent"/>
   </div>
 </div>
