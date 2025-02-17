@@ -1,8 +1,7 @@
 ---
 title: El libre desarrollo de la anonimidad
-description: De unos primeros encuentros estimulantes con los espacios online a
-  unos últimos más bien decepcionantes, me pregunto, ¿y si interactuaramos desde
-  la anonimidad?
+description: Si el internet nos permite portar cualquier identidad ¿por que
+  insistimos en disfrazarnos de nosotros mismos?
 featured: false
 author:
   - Felipe Moyano
