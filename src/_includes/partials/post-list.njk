@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 lg:gap-12 gap-6 md:gap-8 md:grid-cols-3">
+<div class="grid grid-cols-1 lg:gap-12 gap-8 md:grid-cols-3">
   {% for post in postslist | reverse %}
     <article class="w-full space-y-2 @container">
       <div class="relative pb-1/2 aspect-video">
@@ -6,7 +6,7 @@
           <img src="{{post.data.cover}}" alt="" class="absolute w-full h-full object-cover">
         </a>
       </div>
-      <h2 class="text-lg font-medium font-headline leading-none md:text-2xl text-neutral-800 cursor-pointer">
+      <h2 class="text-xl font-medium font-headline leading-none @2xs:text-2xl text-neutral-800 cursor-pointer">
         <a class="inline-flex w-full" href="{{ post.url | url }}">{{post.data.title}}</a>
       </h2>
       {# {% for tag in post.data.tags | filterTagList %}
@@ -19,7 +19,7 @@
       <ul class="flex gap-1 items-center">
         {% for author in post.data.author %}
           <li>
-            <a class="text-neutral-500 uppercase font-sans text-xs" href="/autores/{{author | slug}}">
+            <a class="text-neutral-500 font-sans text-sm" href="/autores/{{author | slug}}">
               {{author}}
             </a>
             {% if not loop.last %}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
@@ -7,13 +7,18 @@
     <title>{{ title }} | Parque amarillo</title>
     {# {% if description %}
       <meta name="description" content="{{ description }}"/>
-    {% endif %} #}
-    {% block head %}{% endblock %}
+    {% endif %} #} #}
+    {% block head %}
+      {{ head }}
+    {% endblock %}
+    <meta property="og:url" content="{{settings.url}}{{page.url}}">
+    <meta property="og:locale" content="es_CO"/>
+
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/fonts.css"/>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css"/>
-    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -26,7 +31,9 @@
 
     {# content #}
     <main class="flex-1 bg-background pb-12">
-      {{ content | safe }}
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
     </main>
 
     {# footer #}

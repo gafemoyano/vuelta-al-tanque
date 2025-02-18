@@ -4,6 +4,6 @@ command = "npm run build"
 
 [[redirects]]
 from = "https://elparqueamarillo.com/*"
-to = "https://parqueamarillo/:splat"
+to = "https://parqueamarillo.com/:splat"
 status = 301
 force = true

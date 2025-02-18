@@ -1,8 +1,81 @@
 import yaml from "js-yaml";
 import { DateTime } from "luxon";
 import htmlmin from "html-minifier";
+import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
+async function metaImage(src) {
+  console.log("metaImage called with src:", src);
+  if (!src) {
+    console.warn("No source provided to metaImage shortcode");
+    return null;
+  }
+
+  let metadata = await Image(src, {
+    widths: [1200],
+    formats: ["jpeg"],
+
+    outputDir: "./_site/img/",
+    urlPath: "/img/",
+  });
+
+  const attrs = {
+    url: metadata.jpeg[0].url,
+    width: metadata.jpeg[0].width,
+    height: metadata.jpeg[0].height,
+    sourceType: metadata.jpeg[0].sourceType,
+  };
+  console.log(attrs);
+  return attrs;
+}
 export default function (eleventyConfig) {
+  eleventyConfig.addShortcode("image", async function (src, alt) {
+    let metadata = await Image(src, {
+      transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
+    });
+
+    // You bet we throw an error on a missing alt (alt="" works okay)
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
+  eleventyConfig.addAsyncShortcode(
+    "ogImage",
+    async function (src, alt, siteUrl) {
+      if (!src) {
+        console.warn("No source provided to ogImage shortcode");
+        return "";
+      }
+
+      let metadata = await Image(src, {
+        widths: [1200],
+        formats: ["jpeg"],
+        outputDir: "./_site/img/",
+        urlPath: "/img/",
+      });
+
+      if (!metadata.jpeg || metadata.jpeg.length === 0) {
+        console.warn("No JPEG image generated");
+        return "";
+      }
+
+      const imageData = metadata.jpeg[0];
+
+      return `
+      <meta property="og:image" content="${siteUrl}${imageData.url}">
+      <meta property="og:image:width" content="${imageData.width}">
+      <meta property="og:image:height" content="${imageData.height}">
+      <meta property="og:image:type" content="${imageData.sourceType}">
+      <meta property="og:image:alt" content="${alt}">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="${siteUrl}${imageData.url}">
+      <meta name="twitter:image:alt" content="${alt}">
+    `;
+    },
+  );
+
+  // eleventyConfig.addNunjucksGlobal("metaImage", metaImage);
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
@@ -12,7 +85,7 @@ export default function (eleventyConfig) {
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+      "dd LLL yyyy",
     );
   });
 
@@ -22,14 +95,27 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("filterPostsByAuthor", (posts, authorName) => {
     return posts.filter(
-      (post) => post.data.author && post.data.author.includes(authorName)
+      (post) => post.data.author && post.data.author.includes(authorName),
     );
+  });
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  eleventyConfig.addCollection("featuredPosts", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/posts/*.md")
+      .filter((item) => item.data.featured);
+  });
+
+  eleventyConfig.addFilter("filterFeatured", (posts) => {
+    return posts.filter((post) => !post.data.featured);
   });
 
   eleventyConfig.addFilter("filterTagList", (tags) => {
     // should match the list in tags.njk
     return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1,
     );
   });
 
@@ -67,7 +153,7 @@ export default function (eleventyConfig) {
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) =>
-    yaml.safeLoad(contents)
+    yaml.safeLoad(contents),
   );
 
   // Copy Static Files to /_Site

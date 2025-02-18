@@ -1,12 +1,15 @@
 ---
 title: Páramos
-description: Boyacá es un territorio que no se deja entender. Entre sus montañas
-  y páramos, uno es extranjero en su propia tierra.
+description: Entre las montañas y páramos de la cordillera de los Andes, uno es
+  extranjero en su propia tierra.
+featured: false
 author:
   - Jorge Jaramillo
 date: 2025-01-13T00:00:00.000Z
-cover: /static/img/1_arq1nlipigxgwrc8flw1bq.webp
+cover: /static/img/dall·e-2025-02-15-11.53.43-an-abstract-mystical-image-representing-a-colombian-man-exploring-the-páramos-a-vast-and-complex-highland-landscape.-the-scene-is-filled-with-mist-.webp
+permalink: /posts/paramos/
 ---
+
 El año comienza con una visita a los campos de Boyacá, Colombia. Un territorio vasto que se desliza desde los picos nevados de la cordillera oriental de los Andes, hasta las riberas tropicales del río Magdalena en el centro del país. Un territorio que, por tal topografía, atestigua una vez más la culminación de aquella cadena montañosa que se trepa desde la Patagonia y que une a toda la América del Sur, para su encuentro con el trópico.
 
 Boyacá es también un lugar que para muchos que no somos de allí, se pasa por alto, se ignora fácilmente, se da por sentado. Que se asocia rápidamente a la tranquila vida campesina, quizás más estática y aburrida, quizás menos desarrollada y excitante. Que a veces es tan solo esa tierra de donde viene algún linaje: esa abuela que nació y creció en Sogamoso, esa finca de la familia en Ráquira, esos primos lejanos que trabajan la tierra en Moniquirá. Y que mantiene su discreción por la humildad de sus habitantes, que trabajan y cuidan de su tierra en silencio, sin alardeo ni protagonismo. A quienes la vastedad y fecundidad de su terruño — quiero creer — les inmuniza ante el magnetismo de las grandes urbes de esta accidentada nación.

@@ -1,3 +1,5 @@
 items:
-  - text: Acerca
-    url: /acerca/
+  - text: Boletín
+    url: /boletin/
+  - text: Suscribirse
+    url: "#subscribe"
