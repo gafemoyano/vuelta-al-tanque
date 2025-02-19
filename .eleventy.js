@@ -1,33 +1,12 @@
+import pluginRss from "@11ty/eleventy-plugin-rss";
 import yaml from "js-yaml";
 import { DateTime } from "luxon";
 import htmlmin from "html-minifier";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
-async function metaImage(src) {
-  console.log("metaImage called with src:", src);
-  if (!src) {
-    console.warn("No source provided to metaImage shortcode");
-    return null;
-  }
-
-  let metadata = await Image(src, {
-    widths: [1200],
-    formats: ["jpeg"],
-
-    outputDir: "./_site/img/",
-    urlPath: "/img/",
-  });
-
-  const attrs = {
-    url: metadata.jpeg[0].url,
-    width: metadata.jpeg[0].width,
-    height: metadata.jpeg[0].height,
-    sourceType: metadata.jpeg[0].sourceType,
-  };
-  console.log(attrs);
-  return attrs;
-}
 export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   eleventyConfig.addShortcode("image", async function (src, alt) {
     let metadata = await Image(src, {
       transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
@@ -171,6 +150,8 @@ export default function (eleventyConfig) {
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+
+  // Add a passthrough copy for the RSS feed
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
