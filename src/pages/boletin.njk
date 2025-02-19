@@ -1,18 +1,18 @@
 ---
-title: "boletines"
+title: "Boletín"
 subtitle: "nuestro índice"
 permalink: /boletin/
 layout: layouts/default
 ---
 
 <div class="container mt-12">
-  <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">Boletines</h1>
+  <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">{{ title }}</h1>
   <hr class="w-16  my-8 border-b-2 border-accent"/>
 </div>
 <div class="container mx-auto pb-16">
   {% for newsletter in collections.boletin %}
-    <a href="{{newsletter.url}}" class="w-full max-w-4xl mx-auto flex flex-row items-center px-6 py-16 gap-8 border-b-2">
-      <h2 class="text-3xl text-center lg:text-4xl">
+    <a href="{{newsletter.url}}" class="w-full mx-auto flex justify-between items-center py-16 gap-8 border-b-2">
+      <h2 class="text-3xl text-center lg:text-4xl font-bold">
         {{ newsletter.data.title }}
       </h2>
       <p>

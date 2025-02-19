@@ -1,4 +1,4 @@
-<footer class="mt-20 bottom-0 w-full py-6 bg-white shadow-md border-t">
+<footer class="mt-24 bottom-0 w-full py-6 bg-white shadow-md border-t">
   <div class="flex container justify-between items-center">
     <div class="flex flex-col gap-2">
       <svg width="269" height="28" viewBox="0 0 269 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,8 +30,24 @@
       </div>
       <small class="text-neutral-800">© {{settings.name}} 2025.</small>
     </div>
-    <div>
-      <img class="w-auto h-[150px]" src="/static/img/arturo.jpg" alt="Arturo el caneco">
+    <div class="flex gap-8 md:gap-16 items-center">
+      <div class="flex flex-col gap-2">
+        <h3 class="font-sans font-medium uppercase">Temas</h3>
+        <ul>
+          <li>
+            <a href="/boletin/" class="text-neutral-700 hover:text-accent hover:underline text-sm">Boletín</a>
+          </li>
+          <li>
+            <a href="/posts/" class="text-neutral-700 hover:text-accent hover:underline text-sm">Artículos</a>
+          </li>
+          <li>
+            <a href="/articulos.xml" class="text-neutral-900 hover:text-accent hover:underline text-sm">Feed RSS</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img class="w-auto h-[150px]" src="/static/img/arturo.jpg" alt="Arturo el caneco">
+      </div>
     </div>
   </div>
 </footer>

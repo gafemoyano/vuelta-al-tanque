@@ -23,7 +23,7 @@ path: home
   </div>
   <div class="w-full flex items-center justify-center">
     <div class="max-w-md mx-auto">
-      <h1 class="text-center text-3xl md:text-4xl xl:text-5xl font-bold text-neutral-900 font-headline">
+      <h1 class="text-center text-3xl md:text-4xl xl:text-5xl font-black text-neutral-900 font-headline">
         <a href="{{featuredPost.url}}">{{ featuredPost.data.title }}</a>
       </h1>
       <p class="mt-6 text-neutral-700 font-sans text-center text-base md:text-xl">
@@ -32,7 +32,7 @@ path: home
     </div>
   </div>
 </section>
-<section class="container my-24">
+<section class="container mt-32">
   {% set postslist = collections.post | filterFeatured %}
   {% include 'partials/post-list.njk'%}
 </section>
