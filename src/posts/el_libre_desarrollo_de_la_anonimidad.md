@@ -10,7 +10,7 @@ cover: /static/img/dall_e_2025-02-16_21.38.33_-_a_pixel_art_cyberpunk_scene_insp
 ---
 Yo soy, en múltiples aspectos de la definición, un *geek*. Crecí con un teclado bajo el brazo. En mi casa hubo un computador desde que tengo memoria. Y desde esas tempranas épocas recuerdo las olas del cambio y la evolución. Algo que hoy en día damos por sentado, pues qué diferencia hay entre el iPhone 12 al 13 al 24. En esa época, al actualizar el PC desbloqueaba nuevas posibilidades: instalar \_\_Príncipe de Persia 2\_\_, ahora a color y con una cantidad de mundos que requerían de 4 disquetes en lugar de uno.
 
-![Prince 2](https://dosgames.com/screens/prince.gif "Prince 2")
+![Prince 2]( "Prince 2")
 
 En otra ocasión pasamos del clásico sistema DOS a Windows 3.1. Atrás quedaron los días de buscar directorios ciegamente tecleando \_\_cd\_\_ y \_\_dir\_\_ hasta encontrar el codiciado fichero \_\_sokoban.exe\_\_ y entraríamos en la época del mouse, reemplazando dichos comandos con el intuitivo gesto de hacer doble clic en figuritas para navegar y lanzar programas.
 
