@@ -144,6 +144,7 @@ export default function (eleventyConfig) {
   });
 
   // Copy Image Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("./src/static/css/fonts.css");
   eleventyConfig.addPassthroughCopy("./src/static/img");
   eleventyConfig.addPassthroughCopy("./src/static/fonts");
