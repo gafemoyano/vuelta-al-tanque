@@ -15,7 +15,7 @@
 {% block content %}
   {% set featuredPost = collections.featuredPosts | first %}
 
-  {% if not featuredPost %}
+  {% if featuredPost %}
     <section class="mt-16 flex flex-col md:flex-row-reverse w-full gap-8  place-content-center container">
       <div class="w-full mx-auto">
         <img class="w-fit object-cover object-center mx-auto aspect-[5/6] max-h-[650px]" src="{{ featuredPost.data.cover }}" alt="Cigueña volando en un futuro distópico">
