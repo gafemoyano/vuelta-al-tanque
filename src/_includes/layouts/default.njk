@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    {% if settings.environment === "production" %}
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="701b3abd-ad98-46aa-9f71-c2a4b3380b70"></script>
+    {% endif %}
   </head>
   <body class="flex flex-col min-h-screen overflow-x-hidden text-base antialiased text-body bg-white font-sans">
 

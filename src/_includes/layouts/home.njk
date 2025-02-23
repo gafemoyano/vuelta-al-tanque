@@ -1,38 +1,53 @@
----
-layout: layouts/default
-path: home
----
+{% extends "layouts/default.njk" %}
 
 {% block head %}
   <meta name="description" content="{{ description }}">
   <meta name="keywords" content="{{ keywords }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="{{settings.url}}{{ settings.logo }}">
+  <meta property="og:image" content="{{settings.url}}{{ cover }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="{{ image }}">
+  <meta name="twitter:image" content="{{settings.url}}{{ cover }}">
 {% endblock %}
 
-{% set featuredPost = collections.featuredPosts | first %}
+{% block content %}
+  {% set featuredPost = collections.featuredPosts | first %}
 
-<section class="mt-16 flex flex-col md:flex-row-reverse w-full gap-8  place-content-center container">
-  <div class="w-full mx-auto">
-    <img class="w-fit object-cover object-center mx-auto aspect-[5/6] max-h-[650px]" src="{{ featuredPost.data.cover }}" alt="Cigueña volando en un futuro distópico">
-  </div>
-  <div class="w-full flex items-center justify-center">
-    <div class="max-w-md mx-auto">
-      <h1 class="text-center text-3xl md:text-4xl xl:text-5xl font-black text-neutral-900 font-headline">
-        <a href="{{featuredPost.url}}">{{ featuredPost.data.title }}</a>
-      </h1>
-      <p class="mt-6 text-neutral-700 font-sans text-center text-base md:text-xl">
+  {% if not featuredPost %}
+    <section class="mt-16 flex flex-col md:flex-row-reverse w-full gap-8  place-content-center container">
+      <div class="w-full mx-auto">
+        <img class="w-fit object-cover object-center mx-auto aspect-[5/6] max-h-[650px]" src="{{ featuredPost.data.cover }}" alt="Cigueña volando en un futuro distópico">
+      </div>
+      <div class="w-full flex items-center justify-center">
+        <div class="max-w-md mx-auto">
+          <h1 class="text-center text-3xl md:text-4xl xl:text-5xl font-black text-neutral-900 font-headline">
+            <a href="{{featuredPost.url}}">{{ featuredPost.data.title }}</a>
+          </h1>
+          <p class="mt-6 text-neutral-700 font-sans text-center text-base md:text-xl">
         Por  <a href="/autores/{{ featuredPost.data.author | slug }}">Jorge Jaramillo</a>
-      </p>
-    </div>
-  </div>
-</section>
-<section class="container mt-32">
-  {% set postslist = collections.post | filterFeatured %}
-  {% include 'partials/post-list.njk'%}
-</section>
+          </p>
+        </div>
+      </div>
+    </section>
+  {% else %}
+    <section class="mt-16 flex flex-col md:flex-row-reverse w-full gap-8  place-content-center container">
+      <div class="w-full mx-auto">
+        <img class="w-fit object-cover object-center mx-auto aspect-[5/6] max-h-[650px]" src="{{ cover }}" alt="El parque amerindio">
+      </div>
+      <div class="w-full flex items-center justify-center">
+        <div class="max-w-md mx-auto">
+          <h1 class="text-center text-3xl md:text-4xl xl:text-5xl font-black text-neutral-900 font-headline">
+          Parque Amarillo
+        </h1>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  <section class="container mt-32">
+    {% set postslist = collections.post | filterFeatured %}
+    {% include 'partials/post-list.njk'%}
+  </section>
+{% endblock %}

@@ -9,9 +9,8 @@ media_folder: "src/static/img"
 public_folder: "/static/img"
 site_url: https://elparqueamarillo.com
 slug:
-  encoding: "ascii"
+  encoding: "unicode"
   clean_accents: true
-  sanitize_replacement: "_"
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
 publish_mode: editorial_workflow
@@ -79,7 +78,7 @@ collections:
               - { label: Description, name: desc, widget: string }
       - label: "Meta Settings"
         name: "settings"
-        file: "src/_data/settings.yaml"
+        file: "src/_data/settings.js"
         fields:
           - { label: Name, name: name, widget: string }
           - { label: Description, name: description, widget: string }
