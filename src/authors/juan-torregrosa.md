@@ -4,4 +4,4 @@ avatar: /static/img/469243916_18336019189147942_3583373398358383555_n.jpg
 slug: juan-torregrosa
 ---
 
-Trabajo en cine por el mundo y cuento mis historias.
+Se suma este proyecto a un atiborrado sancocho de ideas. En el rarísimo caso de que todas cosan, mejor dicho: ¿Arjona quién? La realidad es que reza para que por lo menos una salga a flote y así demostrar que el componente activo del arte está en romper convenciones. Léanme para que eso pase y así gamamos todos -principalmente yo-.

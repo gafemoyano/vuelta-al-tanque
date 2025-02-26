@@ -53,7 +53,12 @@ export default function (eleventyConfig) {
 
   // eleventyConfig.addNunjucksGlobal("metaImage", metaImage);
 
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["webp", "jpeg"],
+    sizes: ["auto", "225px", "480px", "640px", "1200px"],
+    loading: "lazy",
+    decoding: "async",
+  });
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);

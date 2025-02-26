@@ -3,7 +3,7 @@
     <article class="w-full  @container">
       <div class="relative pb-1/2 aspect-video">
         <a class="cursor-pointer" href="{{post.url | url}}">
-          <img src="{{post.data.cover}}" alt="" class="absolute w-full h-full object-cover">
+          <img sizes="auto" loading="lazy" eleventy:widths="225,480,640" src="{{post.data.cover}}" alt="" class="absolute w-full h-full object-cover">
         </a>
       </div>
       <h2 class="text-xl font-medium font-headline leading-none @2xs:text-2xl text-neutral-800 cursor-pointer mt-4">

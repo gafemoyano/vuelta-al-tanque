@@ -7,8 +7,8 @@ pagination:
 permalink: "autores/{{ author.data.slug }}/index.html"
 ---
 <div class="my-16 container">
-
-  <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">Artículos by {{ author.data.name }}</h1>
+  <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">Artículos por {{ author.data.name }}</h1>
+  <hr class="w-16  my-8 border-b-2 border-accent"/>
 </div>
 <section class="container my-16">
   {% set postslist = collections.post | filterPostsByAuthor(author.data.name) %}
