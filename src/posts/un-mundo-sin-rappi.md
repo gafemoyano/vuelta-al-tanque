@@ -3,11 +3,11 @@ title: Un mundo sin Rappi
 description: A veces me pregunto cómo sería un mundo privado de las maravillas
   de la gig economy y sus revolucionarias startups. Me tildarán de aguafiestas,
   anti-tecnológico e infeliz, pero quizás sería un mundo mejor
+featured: true
 author:
   - Jorge Jaramillo
 date: 2025-01-28T00:00:00.000Z
 cover: /static/img/1_crl8lehin3tp6kvm9q4yua.webp
-featured: false
 ---
 
 A veces me pregunto cómo sería un mundo sin Rappi. O sin Glovo, para situarlo en España, donde ahora vivo.
