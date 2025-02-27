@@ -20,9 +20,9 @@ En mi cabeza tejí pensamientos oscuros: estamos frente al gran complot del perv
 
 Escribí en un *post-it*: “a publicaciones necias reacciones sordas” y entré una vez más. Decanté las ofertas de trabajo a las etiquetas que más resonaban con mi perfil: Gestor Cultural y Director de Proyecto —lo más cercano a 'artista' en terminología *Linkediana*— y, vamos a ello que vienen las carcajadas.
 
-Opción 1: *Barcelona, híbrido, unos buenos miles de Euros, responsabilidades a las que me ajusto. Párrafo de presentación.* Chatgptazo*. A lo mejor actualizo mi CV para esta aplicación. Mierda, tengo que instalar* Illustrator*. Mejor le digo al amigo que me la hizo. No contesta, ¿cuánto llevo en esta aplicación? La termino después.*
+Opción 1: *Barcelona, híbrido, unos buenos miles de Euros, responsabilidades a las que me ajusto. Párrafo de presentación. Chatgptazo. A lo mejor actualizo mi CV para esta aplicación. Mierda, tengo que instalar Illustrator. Mejor le digo al amigo que me la hizo. No contesta, ¿cuánto llevo en esta aplicación? La termino después.*
 
-Opción 2: *No tan interesante pero bueno, bastantes euros. Responsabilidades similares a las de antes. Un equipo de gente que se adora, perfecto, fan de las relaciones de oficina. Esta vez mi CV cuadra. ¿Carta de presentación? por Dios.* Chatgptazo*. ¿Ahora estoy en otra web? Una IA desglosa completamente mal mi Curriculum. La carta ahora la piden en inglés. ¡Se me fue la mañana! La termino después.*
+Opción 2: *No tan interesante pero bueno, bastantes euros. Responsabilidades similares a las de antes. Un equipo de gente que se adora, perfecto, fan de las relaciones de oficina. Esta vez mi CV cuadra. ¿Carta de presentación? por Dios. Chatgptazo. ¿Ahora estoy en otra web? Una IA desglosa completamente mal mi Curriculum. La carta ahora la piden en inglés. ¡Se me fue la mañana! La termino después.*
 
 Opción 3: *Barcelona, híbrido. No tantos euros, no importa. ¡Buah! culo de ladrillo de descripción, lo que sea, no la leo. CV simple, sin párrafo de presentación, perfecto. Reviso. Todo correcto. Esto es un milagro: “Enviar”. “La oferta ha llegado al límite de las aplicaciones. Sigue buscando”.* Ni el más mínimo asomo de una sonrisa *my friend*.
 
