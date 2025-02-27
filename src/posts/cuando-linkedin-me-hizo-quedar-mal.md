@@ -1,5 +1,5 @@
 ---
-title: Cuando LinkedIn me hizo quedar mal
+title: "LinkedIn: La red del no humor"
 description: "Tejí pensamientos oscuros: estamos frente a un complot del
   capitalismo y nos dominan bajo el yugo de la infelicidad."
 featured: false
