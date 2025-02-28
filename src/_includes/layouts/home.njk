@@ -18,7 +18,7 @@
   <section class="mt-16 flex flex-col md:flex-row-reverse w-full gap-8  place-content-center container">
     {% if featuredPost %}
       <div class="w-full mx-auto">
-        <img class="w-fit object-cover object-center mx-auto aspect-[5/6] max-h-[650px] lg:max-h-[80dvh]" src="{{ featuredPost.data.cover }}" alt="Cover text">
+        <img height="650" eleventy:widths="auto" loading="lazy" parsing="async" class="w-fit object-cover object-center mx-auto aspect-[5/6] max-h-[650px] lg:max-h-[80dvh]" src="{{ featuredPost.data.cover }}" alt="Cover text">
       </div>
       <div class="w-full flex items-center justify-center">
         <div class="max-w-md mx-auto">

@@ -55,7 +55,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp", "jpeg"],
-    sizes: ["auto", "225px", "480px", "640px", "1200px"],
+    sizes: ["auto", "225px", "480px", "640px", "1200px", "1600px"],
     loading: "lazy",
     decoding: "async",
   });
