@@ -6,10 +6,22 @@ pagination:
   alias: author
 permalink: "autores/{{ author.data.slug }}/index.html"
 ---
-<div class="my-16 container">
-  <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">Artículos por {{ author.data.name }}</h1>
-  <hr class="w-16  my-8 border-b-2 border-accent"/>
+
+<div class="my-16 container @container">
+  <div class="flex gap-4 items-center ">
+    <img class="size-16 rounded-full object-cover object-center" src="{{author.data.avatar}}" alt="">
+    <h1 class="font-bold text-4xl font-headline md:text-5xl text-neutral-900">{{ author.data.name }}</h1>
+  </div>
+  <div class="mt-8 ">
+    <article class="font-body  max-w-[65ch] text-sm @2xs:text-base text-neutral-600">
+      {{author.content | safe}}
+    </article>
+  </div>
 </div>
+
+<div class="container mt-20">
+  <h2 class="text-xl font-headline font-bold lg:text-2xl">Artíc<span class="text-yellow-500">u</span>los r<span class="text-yellow-500">e</span>cientes</h2><hr class="w-16 mt-4 border-b-2 border-accent"></div>
+
 <section class="container my-16">
   {% set postslist = collections.post | filterPostsByAuthor(author.data.name) %}
   {% include 'partials/post-list.njk'%}

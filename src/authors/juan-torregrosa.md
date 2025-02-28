@@ -1,6 +1,6 @@
 ---
 name: Juan Torregrosa
-avatar: /static/img/469243916_18336019189147942_3583373398358383555_n.jpg
+avatar: /static/img/torre.jpg
 slug: juan-torregrosa
 ---
 
