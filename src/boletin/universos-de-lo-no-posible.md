@@ -2,7 +2,6 @@
 title: Universos de lo no posible
 date: 2025-03-05T09:21:00.000Z
 ---
-
 Concebido como un boletín mensual de opinión y recomendaciones, Parque Amarillo
 supo mutar a un espacio web en el que alojamos contenidos críticos. **Mejor dicho: un blog con newsletter**.
 
@@ -42,13 +41,19 @@ Yo soy, en el fondo, un geek. Crecí con un teclado bajo el brazo. En mi casa h
 
 ### Playa Negra
 
+![Cover playa negra](/static/img/eb747g6phvkhbqu2w593wf.png "Cover playa negra")
+
 Ojo al disco Playa Negra de Gabriel Ríos. El experimento de este puertorriqueño combina elementos globales con esa pulsión latina y de aire sonero, que parece colársele irremediablemente. El resultado es el encuentro frontal con lo que él mismo llama el “Caribe Gótico”.
 
 ### American Honey
 
+![American Honey](/static/img/3zsjxs2xlwdrck6zbsl6yr.jpeg "American Honey")
+
 Una película de carretera del Estados Unidos más crudo, pelados vendiendo revistas para sobrevivir.
 
 ### Flow
+
+![Portada de flow](/static/img/2jx7luoxkdxyxjxskafbfe.jpeg "Portada de flow")
 
 Muy bella interpretación de un mundo post humanidad. Lo mejor: animales que se comportan como animales.
 
