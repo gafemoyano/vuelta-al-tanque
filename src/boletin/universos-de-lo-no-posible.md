@@ -2,6 +2,7 @@
 title: Universos de lo no posible
 date: 2025-03-05T09:21:00.000Z
 ---
+
 Concebido como un boletín mensual de opinión y recomendaciones, Parque Amarillo
 supo mutar a un espacio web en el que alojamos contenidos críticos. **Mejor dicho: un blog con newsletter**.
 
@@ -56,7 +57,3 @@ Una película de carretera del Estados Unidos más crudo, pelados vendiendo revi
 ![Portada de flow](/static/img/2jx7luoxkdxyxjxskafbfe.jpeg "Portada de flow")
 
 Muy bella interpretación de un mundo post humanidad. Lo mejor: animales que se comportan como animales.
-
-**Autores**
-
-Parque Amarillo lo crean y lo escriben: Jorge Jaramillo, Juan Sebastián Torregrosa y Felipe Moyano.
