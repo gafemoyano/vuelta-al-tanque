@@ -88,6 +88,7 @@ collections:
   - label: "Authors"
     name: "authors"
     folder: "src/authors"
+    identifier_field: name
     create: true
     editor:
       preview: false
