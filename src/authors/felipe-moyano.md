@@ -1,4 +1,5 @@
 ---
+title: Felipe Moyano
 name: Felipe Moyano
 avatar: /static/img/felipe.png
 slug: felipe-moyano

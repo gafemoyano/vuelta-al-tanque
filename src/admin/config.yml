@@ -92,6 +92,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: "Title", name: "title", widget: "hidden" }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Bio", name: "bio", widget: "string" }
+      - { label: "Bio", name: "body", widget: "markdown" }
       - {label: "Avatar", name: "avatar", widget: "image"}

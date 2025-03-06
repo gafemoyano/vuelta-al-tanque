@@ -1,4 +1,5 @@
 ---
+title: Juan Torregrosa
 name: Juan Torregrosa
 avatar: /static/img/torre.jpg
 slug: juan-torregrosa

@@ -1,4 +1,5 @@
 ---
+title: Jorge Jaramillo
 name: Jorge Jaramillo
 avatar: /static/img/jorge.jpg
 slug: jorge-jaramillo
