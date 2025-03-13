@@ -1,8 +1,8 @@
 ---
 title: Huérfanos del Sur
-description: Los huérfanos del desarrollo, podría llamársele a los países del
-  Tercer Mundo / Sur Global / Países en vía de desarrollo. O llanamente, los
-  países pobres, que fueron pateados lejos, muy lejos, por el Tío Sam.
+description: Los huérfanos del desarrollo, podría llamársele al Sur Global. O
+  llanamente, los países pobres, que fueron pateados lejos, muy lejos, por el
+  Tío Sam.
 featured: false
 author:
   - Jorge Jaramillo
