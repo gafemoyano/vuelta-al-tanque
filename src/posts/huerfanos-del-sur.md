@@ -7,7 +7,7 @@ featured: false
 author:
   - Jorge Jaramillo
 date: 2025-03-13T12:22:00.000Z
-cover: /static/img/dall·e-2025-03-13-12.20.30-a-highly-stylized-illustration-of-a-very-elderly-european-woman-but-not-extremely-frail-with-deep-wrinkles-and-aged-features-sitting-in-a-wheelchai.webp
+cover: /static/img/dall·e-2025-03-13-12.26.55-a-highly-stylized-illustration-of-a-very-elderly-european-woman-but-not-extremely-frail-with-deep-wrinkles-and-aged-features-sitting-in-a-wheelchai.webp
 ---
 Por estos días se comenta mucho sobre lo alocado de las decisiones que está tomando el gobierno estadounidense. Sobre cómo este gobierno está desequilibrando las relaciones geopolíticas y desmantelando el multilateralismo, como lo conocíamos. Y sobre cómo esta conducta americana no tiene precedentes, parece salirse de todos los esquemas. Aunque en estos artículos busco alejarme de la coyuntura, abstraerme del "momento presente" —por usar un término que gusta mucho a mi generación—, en este caso, la verdad es que resulta muy difícil no aludir de manera específica al extravagante despegue del segundo mandato de Donald Trump en la Casa Blanca. 
 Desde el ángulo del entretenimiento, es un deleite. Es una coreografía muy graciosa, como circense, con curiosos personajes que hacen piruetas simpáticas. Como cuando Elon, en su tierna y natural rareza, imitó de forma divertida el saludo de Adolfo. O como cuando Trump y su gavilla arrinconan a Volodymyr en el Despacho Oval, en lo que parece un matoneo de niños grandes a uno chiquito, en la primaria de un colegio. "No, yo hablo más fuerte, te callas". Es como estar viendo Veep, pero esta vez no es una genialidad de Julia Louis-Dreyfus, sino el mandatario del ¡país número uno del mundo! 
