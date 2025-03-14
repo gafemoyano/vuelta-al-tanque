@@ -1,6 +1,7 @@
 ---
 title: Ni tan mal los Oscar
-description: Empecé con animosidad, transité con duda, cerré con aplausos.
+description: Empecé con animosidad, transité con duda, cerré aplaudiendo. Me
+  encontré una ceremonia sagaz.
 featured: false
 author:
   - Juan Torregrosa
